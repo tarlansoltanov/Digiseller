@@ -1,0 +1,99 @@
+header {
+  @include full_container;
+  background-color: $main_bg;
+  .header_container {
+      position: relative;
+    @media only screen and (min-width: 1200px) {
+      @include container;
+    }
+    @media only screen and (max-width: 1200px) {
+      @include full_container;
+    }
+    height: 105.6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    .logo_box {
+      width: 200px;
+      height: 65px;
+      padding: 20px 0;
+    }
+    @media only screen and (min-width: 1200px) {
+      .mobile_button,
+      .mobile_menu {
+        display: none;
+      }
+      navbar {
+        padding: 28px 0;
+        ul {
+          display: flex;
+          align-items: center;
+          li {
+            a {
+              font: $header_font $merriweather;
+              font-weight: 500;
+              padding: 15px 20px;
+              color: $header_tg;
+              margin: 0 5px;
+              text-decoration: none;
+              border-radius: 3px;
+              &:hover {
+                background-color: $secondary_bg;
+              }
+            }
+            a.chosen {
+              background-color: $secondary_bg;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+      .mobile_button {
+        @include center;
+        color: $header_tg;
+        font-size: 25px;
+        width: 48px;
+        height: 42px;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+      }
+      navbar {
+        display: none;
+        width: 299px;
+        height: 3537px;
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        .mobile_menu {
+          font: 24px $droid_serif;
+          font-weight: 500;
+          padding: 10px 10px 10px 0;
+          color: $header_tg;
+          margin: 0 5px;
+        }
+        ul {
+          padding-left: 15px;
+          width: 284px;
+          display: flex;
+          flex-direction: column;
+          li {
+            a {
+              display: block;
+              font: $header_font $merriweather;
+              font-weight: 500;
+              padding: 15px 20px;
+              color: $header_tg;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

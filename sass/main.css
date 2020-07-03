@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #d86843;
+}
+
+header .header_container {
+  position: relative;
+  height: 105.6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (min-width: 1200px) {
+  header .header_container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header .header_container {
+    width: 100%;
+  }
+}
+
+header .header_container .logo_box {
+  width: 200px;
+  height: 65px;
+  padding: 20px 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  header .header_container .mobile_button,
+  header .header_container .mobile_menu {
+    display: none;
+  }
+  header .header_container navbar {
+    padding: 28px 0;
+  }
+  header .header_container navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header_container navbar ul li a {
+    font: 18px "Merriweather", serif;
+    font-weight: 500;
+    padding: 15px 20px;
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  header .header_container navbar ul li a:hover {
+    background-color: #333;
+  }
+  header .header_container navbar ul li a.chosen {
+    background-color: #333;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header .header_container .mobile_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    font-size: 25px;
+    width: 48px;
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+  header .header_container navbar {
+    display: none;
+    width: 299px;
+    height: 3537px;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  header .header_container navbar .mobile_menu {
+    font: 24px "Droid Serif", serif;
+    font-weight: 500;
+    padding: 10px 10px 10px 0;
+    color: white;
+    margin: 0 5px;
+  }
+  header .header_container navbar ul {
+    padding-left: 15px;
+    width: 284px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .header_container navbar ul li a {
+    display: block;
+    font: 18px "Merriweather", serif;
+    font-weight: 500;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
