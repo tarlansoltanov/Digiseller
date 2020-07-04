@@ -796,7 +796,7 @@ header .header_container .logo_box {
 
 @media only screen and (min-width: 800px) {
   .writer_container .writer_wrapper .writer {
-    max-width: 70%;
+    max-width: 67%;
     padding-right: 30px;
   }
 }
