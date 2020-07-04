@@ -1,0 +1,45 @@
+.reviews_container {
+  @media only screen and (min-width: 1200px) {
+    @include container;
+  }
+  @media only screen and (max-width: 1200px) {
+    @include full_container;
+  }
+  .reviews_head {
+    margin-top: 190px;
+    display: block;
+    text-align: center;
+    padding-bottom: 40px;
+    span {
+      font: 35px $merriweather;
+      font-weight: bold;
+    }
+  }
+  .reviews {
+    line-height: 28px;
+    width: 100%;
+    display: flex;
+    .review_item {
+        color: #444444;
+      display: block;
+      text-align: center;
+      background: url(../images/quotes.png) no-repeat 0px 0px;
+      width: 45%;
+      margin-bottom: 20px;
+      margin-left: 2%;
+      padding-left: 3%;
+      span {
+        text-align: center;
+        font: $header_font $droid_serif;
+        font-style: italic;
+        cite {
+          display: block;
+          margin-top: 15px;
+          font: $small_font $droid_serif;
+          font-style: normal;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -351,4 +351,122 @@ header .header_container .logo_box {
 .slider_container .slider_inner #slider .slider_item:hover {
   background-size: 110%;
 }
+
+.slider_container .slider_inner #slider .slider_item .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: transparent;
+  text-align: left;
+}
+
+.slider_container .slider_inner #slider .slider_item .overlay span {
+  color: transparent;
+}
+
+.slider_container .slider_inner #slider .slider_item .overlay:hover {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Droid Serif", serif;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider_container .slider_inner #slider .slider_item .overlay:hover span {
+  display: block;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .slider_container .slider_inner #slider .slider_item .overlay:hover span {
+    height: 92px;
+  }
+}
+
+.slider_container .slider_inner #slider .slider_item .overlay:hover span h1 {
+  color: white;
+  font-size: 18px;
+}
+
+.slider_container .slider_inner #slider .slider_item .overlay:hover span p {
+  color: white;
+  font-size: 14px;
+}
+
+.slider_container .slider_inner #slider .slider_item .overlay:hover span span {
+  color: #dd6e4b;
+  font-size: 25px;
+  margin-top: 15px;
+  font-weight: bold;
+  padding: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .reviews_container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .reviews_container {
+    width: 100%;
+  }
+}
+
+.reviews_container .reviews_head {
+  margin-top: 190px;
+  display: block;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.reviews_container .reviews_head span {
+  font: 35px "Merriweather", serif;
+  font-weight: bold;
+}
+
+.reviews_container .reviews {
+  line-height: 28px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews_container .reviews .review_item {
+  color: #444444;
+  display: block;
+  text-align: center;
+  background: url(../images/quotes.png) no-repeat 0px 0px;
+  width: 45%;
+  margin-bottom: 20px;
+  margin-left: 2%;
+  padding-left: 3%;
+}
+
+.reviews_container .reviews .review_item span {
+  text-align: center;
+  font: 18px "Droid Serif", serif;
+  font-style: italic;
+}
+
+.reviews_container .reviews .review_item span cite {
+  display: block;
+  margin-top: 15px;
+  font: 14px "Droid Serif", serif;
+  font-style: normal;
+  font-weight: bold;
+}
 /*# sourceMappingURL=main.css.map */

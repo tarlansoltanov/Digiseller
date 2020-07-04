@@ -4,15 +4,15 @@
   }
   @media only screen and (max-width: 1200px) {
     width: 100%;
-    span{
-        position: absolute;
+    span {
+      position: absolute;
     }
-    #leftButton{
-        z-index: 1;
-        left: 0;
+    #leftButton {
+      z-index: 1;
+      left: 0;
     }
-    #rightButton{
-        right: 0;
+    #rightButton {
+      right: 0;
     }
   }
   display: flex;
@@ -27,14 +27,14 @@
     }
   }
   .slider_inner {
-    @media only screen and (min-width: 1200px){
-        width: 100%;
+    @media only screen and (min-width: 1200px) {
+      width: 100%;
     }
-    @media only screen and (max-width: 1200px){
-        width: calc(100% - 75px);
-        margin-left: 29px;
+    @media only screen and (max-width: 1200px) {
+      width: calc(100% - 75px);
+      margin-left: 29px;
     }
-    
+
     overflow: hidden;
     #slider {
       display: flex;
@@ -69,6 +69,49 @@
         transition: all 0.5s ease;
         &:hover {
           background-size: 110%;
+        }
+        .overlay {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          color: transparent;
+          text-align: left;
+          span {
+            color: transparent;
+          }
+          &:hover {
+            box-sizing: border-box;
+            font-family: $droid_serif;
+            span {
+              display: block;
+              @media only screen and (max-width:1200px) {
+                height: 92px;
+              }
+              padding: 10px;
+              h1 {
+                color: white;
+                font-size: $header_font;
+              }
+              p {
+                color: white;
+                font-size: $small_font;
+              }
+              span {
+                color: $main_tg;
+                font-size: 25px;
+                margin-top: 15px;
+                font-weight: bold;
+                padding: 0;
+              }
+            }
+
+            background-color: rgba($color: #000000, $alpha: 0.5);
+          }
         }
       }
     }
