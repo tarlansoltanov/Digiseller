@@ -1,0 +1,83 @@
+footer {
+  @include full_container;
+  background-color: #333333;
+  .footer_wrapper {
+    @media only screen and (min-width: 1200px) {
+      @include container;
+    }
+    @media only screen and (max-width: 1200px) {
+      @include full_container_margin;
+    }
+    @media only screen and (min-width: 690px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media only screen and (max-width: 690px) {
+      display: block;
+      .copyright{
+          text-align: center;
+      }
+      .social_media{
+          justify-content: center !important;
+      }
+    }
+    .copyright {
+      padding: 10px 0;
+      color: white;
+      @media only screen and (min-width: 800px) {
+        max-width: 50%;
+      }
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+      h1 {
+        padding-top: 12px;
+        padding-bottom: 5px;
+        font: 15px $droid_serif;
+        line-height: 20px;
+        a {
+          font: 15px $droid_serif;
+          line-height: 20px;
+          color: $main_tg;
+        }
+      }
+      p {
+        padding-bottom: 5px;
+        font: 14px $droid_serif;
+        line-height: 28px;
+        img {
+          vertical-align: middle;
+          padding-bottom: 3px;
+        }
+      }
+    }
+    .social_media {
+      @media only screen and (min-width: 800px) {
+        max-width: 50%;
+      }
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .social_item {
+        width: 45px;
+        height: 45px;
+        background: #292929;
+        border: 1px solid #979797;
+        margin-right: 8px;
+        border-radius: 50%;
+        @include center;
+        img {
+          height: auto;
+          width: auto;
+        }
+        &:hover {
+          background-color: #ffce69;
+          border-color: #ffce69;
+        }
+      }
+    }
+  }
+}

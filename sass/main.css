@@ -82,6 +82,23 @@ table {
   background-color: #fff;
 }
 
+.main_input {
+  padding: 12px;
+  margin-top: 12px;
+  display: block;
+  border: 2px solid rgba(0, 0, 0, 0.18);
+  font: 15px "Droid Serif", serif;
+  color: #666;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main_input:focus {
+  border: 2px solid #e27653;
+  outline: none;
+}
+
 header {
   width: 100%;
   background-color: #d86843;
@@ -741,5 +758,275 @@ header .header_container .logo_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.writer_container {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .writer_container .writer_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .writer_container .writer_wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .writer_container .writer_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .writer_container .writer_wrapper {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .writer_container .writer_wrapper .writer {
+    max-width: 70%;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .writer_container .writer_wrapper .writer {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+}
+
+.writer_container .writer_wrapper .writer .writer_head {
+  font: 25px "Merriweather", serif;
+  font-weight: bold;
+}
+
+.writer_container .writer_wrapper .writer .writer_box {
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 480px) {
+  .writer_container .writer_wrapper .writer .writer_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .writer_container .writer_wrapper .writer .writer_box {
+    display: block;
+  }
+}
+
+.writer_container .writer_wrapper .writer .writer_box .writer_img {
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+  .writer_container .writer_wrapper .writer .writer_box .writer_img {
+    width: 100%;
+  }
+}
+
+.writer_container .writer_wrapper .writer .writer_box .writer_img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.writer_container .writer_wrapper .writer .writer_box .writer_info p {
+  padding-top: 6px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font: 16px "Droid Serif", serif;
+  line-height: 28px;
+}
+
+.writer_container .writer_wrapper .writer .writer_box .writer_info p b {
+  font-weight: bold;
+}
+
+.writer_container .writer_wrapper .writer .writer_box .writer_info span a {
+  color: #dd6e4b;
+  font: 16px "Droid Serif", serif;
+}
+
+.writer_container .writer_wrapper .writer .writer_box .writer_info span a:hover {
+  color: #333333;
+}
+
+.writer_container .writer_wrapper .newsletter_box {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+
+.writer_container .writer_wrapper .newsletter_box .newsletter_head {
+  font: 25px "Merriweather", serif;
+  font-weight: bold;
+}
+
+.writer_container .writer_wrapper .newsletter_box .newsletter_info {
+  padding-top: 10px;
+  font: 14px "Droid Serif", serif;
+  line-height: 28px;
+  font-style: italic;
+  color: #444444;
+}
+
+.writer_container .writer_wrapper .newsletter_box .newsletter_subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 35px 0 0;
+}
+
+footer {
+  width: 100%;
+  background-color: #333333;
+}
+
+@media only screen and (min-width: 1200px) {
+  footer .footer_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  footer .footer_wrapper {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  footer .footer_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  footer .footer_wrapper {
+    display: block;
+  }
+  footer .footer_wrapper .copyright {
+    text-align: center;
+  }
+  footer .footer_wrapper .social_media {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+footer .footer_wrapper .copyright {
+  padding: 10px 0;
+  color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  footer .footer_wrapper .copyright {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  footer .footer_wrapper .copyright {
+    width: 100%;
+  }
+}
+
+footer .footer_wrapper .copyright h1 {
+  padding-top: 12px;
+  padding-bottom: 5px;
+  font: 15px "Droid Serif", serif;
+  line-height: 20px;
+}
+
+footer .footer_wrapper .copyright h1 a {
+  font: 15px "Droid Serif", serif;
+  line-height: 20px;
+  color: #dd6e4b;
+}
+
+footer .footer_wrapper .copyright p {
+  padding-bottom: 5px;
+  font: 14px "Droid Serif", serif;
+  line-height: 28px;
+}
+
+footer .footer_wrapper .copyright p img {
+  vertical-align: middle;
+  padding-bottom: 3px;
+}
+
+footer .footer_wrapper .social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 800px) {
+  footer .footer_wrapper .social_media {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  footer .footer_wrapper .social_media {
+    width: 100%;
+  }
+}
+
+footer .footer_wrapper .social_media .social_item {
+  width: 45px;
+  height: 45px;
+  background: #292929;
+  border: 1px solid #979797;
+  margin-right: 8px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer_wrapper .social_media .social_item img {
+  height: auto;
+  width: auto;
+}
+
+footer .footer_wrapper .social_media .social_item:hover {
+  background-color: #ffce69;
+  border-color: #ffce69;
 }
 /*# sourceMappingURL=main.css.map */

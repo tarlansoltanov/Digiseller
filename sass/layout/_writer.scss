@@ -1,0 +1,94 @@
+.writer_container {
+  @include full_container_margin;
+
+  margin-top: 140px;
+  margin-bottom: 140px;
+  .writer_wrapper {
+    @media only screen and (min-width: 1200px) {
+      @include container;
+    }
+    @media only screen and (max-width: 1200px) {
+      @include full_container;
+    }
+    @media only screen and (min-width: 800px) {
+      display: flex;
+    }
+    @media only screen and (max-width: 800px) {
+      display: block;
+    }
+    .writer {
+      @media only screen and (min-width: 800px) {
+        max-width: 70%;
+        padding-right: 30px;
+      }
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+        margin-bottom: 80px;
+      }
+      .writer_head {
+        font: 25px $merriweather;
+        font-weight: bold;
+      }
+      .writer_box {
+        margin-top: 40px;
+        @media only screen and (min-width: 480px) {
+          display: flex;
+        }
+        @media only screen and (max-width: 480px) {
+          display: block;
+        }
+        .writer_img {
+          @media only screen and (max-width: 480px) {
+            width: 100%;
+          }
+          margin-right: 30px;
+          img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+          }
+        }
+        .writer_info {
+          p {
+            padding-top: 6px;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            font: $standart_font $droid_serif;
+            line-height: 28px;
+            b {
+              font-weight: bold;
+            }
+          }
+          span {
+            a {
+              color: $main_tg;
+              font: $standart_font $droid_serif;
+              &:hover {
+                color: #333333;
+              }
+            }
+          }
+        }
+      }
+    }
+    .newsletter_box {
+      background-color: rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      .newsletter_head {
+        font: 25px $merriweather;
+        font-weight: bold;
+      }
+      .newsletter_info {
+        padding-top: 10px;
+        font: $small_font $droid_serif;
+        line-height: 28px;
+        font-style: italic;
+        color: #444444;
+      }
+      .newsletter_subscribe {
+        display: flex;
+        padding: 15px 35px 0 0;
+      }
+    }
+  }
+}
