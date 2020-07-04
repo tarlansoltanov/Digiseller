@@ -12,19 +12,27 @@
       href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="sass/main.css" />
   </head>
   <body>
+    <!-- Haader -->
+
     <header>
       <div class="header_container">
+        <!-- Logo -->
         <div class="logo_box">
-            <img src="images/logo1.png" alt="">
+          <img src="images/logo1.png" alt="" />
         </div>
+        <!-- Mobile version menu button -->
         <div class="mobile_button">
-            <i class="fa fa-th-list" aria-hidden="true"></i>
+          <i class="fa fa-th-list" aria-hidden="true"></i>
         </div>
-        <navbar id="navbar">
+        <!-- Navigation bar -->
+        <navbar id="navbar" class="hide">
           <ul>
             <li class="mobile_menu">Menu</li>
             <li><a href="index.html" class="chosen">Home</a></li>
@@ -38,7 +46,98 @@
         </navbar>
       </div>
     </header>
-    
+
+    <!-- Home Page Banner -->
+
+    <div class="banner_container">
+      <div class="banner_wrapper">
+        <div class="intro">
+          <h1>Welcome our digital products store</h1>
+          <p>
+            You can use this area to describe the products in your digital
+            store. This responsive theme is ideal for selling many types of
+            digital products such as e-books, audio CDs, DVDs, paintings,
+            photographs or any form of digital art or products.
+          </p>
+        </div>
+        <div class="slider_container">
+          <span id="leftButton">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <div class="slider_inner">
+            <div id="slider">
+              <div>
+                <div class="slider_item img_1">
+                  <div class="overlay">
+                    <h1></h1>
+                    <p></p>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slider_item img_2">
+                  <div class="overlay">
+                    <h1></h1>
+                    <p></p>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slider_item img_3">
+                  <div class="overlay">
+                    <h1></h1>
+                    <p></p>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slider_item img_4">
+                  <div class="overlay">
+                    <h1></h1>
+                    <p></p>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slider_item img_5">
+                  <div class="overlay">
+                    <h1></h1>
+                    <p></p>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slider_item img_6">
+                  <div class="overlay">
+                    <h1></h1>
+                    <p></p>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slider_item img_7">
+                  <div class="overlay">
+                    <h1></h1>
+                    <p></p>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span id="rightButton">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,36 @@
+.banner_container {
+  @include full_container;
+  background-color: $main_bg;
+  @include center;
+  padding-top: 70px;
+  .banner_wrapper {
+    text-align: center;
+    @media only screen and (min-width: 1200px) {
+      @include container;
+
+      margin-bottom: -60px;
+    }
+    @media only screen and (max-width: 1200px) {
+      @include full_container;
+
+      margin-bottom: -60px;
+    }
+    @include center;
+    flex-direction: column;
+    .intro {
+      color: white;
+      max-width: 80%;
+      h1 {
+        font: 35px $merriweather;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+      p {
+        font: $standart_font $droid_serif;
+        line-height: 28px;
+        margin-top: 6px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

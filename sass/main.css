@@ -106,7 +106,7 @@ header .header_container .logo_box {
   header .header_container navbar ul li a {
     font: 18px "Merriweather", serif;
     font-weight: 500;
-    padding: 15px 20px;
+    padding: 12px 20px;
     color: white;
     margin: 0 5px;
     text-decoration: none;
@@ -140,8 +140,10 @@ header .header_container .logo_box {
     right: 0;
     cursor: pointer;
   }
-  header .header_container navbar {
+  header .header_container .hide {
     display: none;
+  }
+  header .header_container navbar {
     width: 299px;
     height: 3537px;
     position: absolute;
@@ -176,5 +178,177 @@ header .header_container .logo_box {
     color: white;
     text-decoration: none;
   }
+}
+
+.banner_container {
+  width: 100%;
+  background-color: #d86843;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 70px;
+}
+
+.banner_container .banner_wrapper {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner_container .banner_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: -60px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .banner_container .banner_wrapper {
+    width: 100%;
+    margin-bottom: -60px;
+  }
+}
+
+.banner_container .banner_wrapper .intro {
+  color: white;
+  max-width: 80%;
+}
+
+.banner_container .banner_wrapper .intro h1 {
+  font: 35px "Merriweather", serif;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.banner_container .banner_wrapper .intro p {
+  font: 16px "Droid Serif", serif;
+  line-height: 28px;
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+
+.slider_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .slider_container {
+    width: 1275px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .slider_container {
+    width: 100%;
+  }
+  .slider_container span {
+    position: absolute;
+  }
+  .slider_container #leftButton {
+    z-index: 1;
+    left: 0;
+  }
+  .slider_container #rightButton {
+    right: 0;
+  }
+}
+
+.slider_container span {
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+}
+
+.slider_container span:hover {
+  color: #333;
+}
+
+.slider_container .slider_inner {
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1200px) {
+  .slider_container .slider_inner {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .slider_container .slider_inner {
+    width: calc(100% - 75px);
+    margin-left: 29px;
+  }
+}
+
+.slider_container .slider_inner #slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider_container .slider_inner #slider .img_1 {
+  background-image: url(../images/book_1.jpg);
+}
+
+.slider_container .slider_inner #slider .img_2 {
+  background-image: url(../images/book_2.jpg);
+}
+
+.slider_container .slider_inner #slider .img_3 {
+  background-image: url(../images/book_3.jpg);
+}
+
+.slider_container .slider_inner #slider .img_4 {
+  background-image: url(../images/book_4.jpg);
+}
+
+.slider_container .slider_inner #slider .img_5 {
+  background-image: url(../images/book_5.jpg);
+}
+
+.slider_container .slider_inner #slider .img_6 {
+  background-image: url(../images/book_6.jpg);
+}
+
+.slider_container .slider_inner #slider .img_7 {
+  background-image: url(../images/book_7.jpg);
+}
+
+.slider_container .slider_inner #slider .slider_item {
+  position: relative;
+  margin: 15px;
+  width: 270px;
+  height: 400px;
+  background-position: center;
+  background-size: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.slider_container .slider_inner #slider .slider_item:hover {
+  background-size: 110%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,76 @@
+.slider_container {
+  @media only screen and (min-width: 1200px) {
+    width: 1275px;
+  }
+  @media only screen and (max-width: 1200px) {
+    width: 100%;
+    span{
+        position: absolute;
+    }
+    #leftButton{
+        z-index: 1;
+        left: 0;
+    }
+    #rightButton{
+        right: 0;
+    }
+  }
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      color: #333;
+    }
+  }
+  .slider_inner {
+    @media only screen and (min-width: 1200px){
+        width: 100%;
+    }
+    @media only screen and (max-width: 1200px){
+        width: calc(100% - 75px);
+        margin-left: 29px;
+    }
+    
+    overflow: hidden;
+    #slider {
+      display: flex;
+      .img_1 {
+        background-image: url(../images/book_1.jpg);
+      }
+      .img_2 {
+        background-image: url(../images/book_2.jpg);
+      }
+      .img_3 {
+        background-image: url(../images/book_3.jpg);
+      }
+      .img_4 {
+        background-image: url(../images/book_4.jpg);
+      }
+      .img_5 {
+        background-image: url(../images/book_5.jpg);
+      }
+      .img_6 {
+        background-image: url(../images/book_6.jpg);
+      }
+      .img_7 {
+        background-image: url(../images/book_7.jpg);
+      }
+      .slider_item {
+        position: relative;
+        margin: 15px;
+        width: 270px;
+        height: 400px;
+        background-position: center;
+        background-size: 100%;
+        transition: all 0.5s ease;
+        &:hover {
+          background-size: 110%;
+        }
+      }
+    }
+  }
+}
