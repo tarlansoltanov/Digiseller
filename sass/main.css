@@ -67,6 +67,21 @@ table {
   background-color: #333333;
 }
 
+.second_button {
+  color: #333333;
+  padding: 15px 35px;
+  margin: 20px 0 6px 0;
+  background-color: #ffce69;
+  font: 16px "Droid Serif", serif;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.second_button:hover {
+  background-color: #fff;
+}
+
 header {
   width: 100%;
   background-color: #d86843;
@@ -440,38 +455,43 @@ header .header_container .logo_box {
   padding: 0;
 }
 
+.reviews_container {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+}
+
 @media only screen and (min-width: 1200px) {
-  .reviews_container {
+  .reviews_container .reviews_wrapper {
     width: 1200px;
     margin: 0 auto;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  .reviews_container {
+  .reviews_container .reviews_wrapper {
     width: 100%;
   }
 }
 
-.reviews_container .reviews_head {
+.reviews_container .reviews_wrapper .reviews_head {
   margin-top: 190px;
   display: block;
   text-align: center;
   padding-bottom: 40px;
 }
 
-.reviews_container .reviews_head span {
+.reviews_container .reviews_wrapper .reviews_head span {
   font: 35px "Merriweather", serif;
   font-weight: bold;
 }
 
-.reviews_container .reviews {
+.reviews_container .reviews_wrapper .reviews {
   line-height: 28px;
   width: 100%;
 }
 
 @media only screen and (min-width: 480px) {
-  .reviews_container .reviews {
+  .reviews_container .reviews_wrapper .reviews {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -479,12 +499,12 @@ header .header_container .logo_box {
 }
 
 @media only screen and (max-width: 480px) {
-  .reviews_container .reviews {
+  .reviews_container .reviews_wrapper .reviews {
     display: block;
   }
 }
 
-.reviews_container .reviews .review_item {
+.reviews_container .reviews_wrapper .reviews .review_item {
   color: #444444;
   display: block;
   text-align: center;
@@ -495,24 +515,24 @@ header .header_container .logo_box {
 }
 
 @media only screen and (min-width: 480px) {
-  .reviews_container .reviews .review_item {
+  .reviews_container .reviews_wrapper .reviews .review_item {
     width: 45%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .reviews_container .reviews .review_item {
+  .reviews_container .reviews_wrapper .reviews .review_item {
     width: 95%;
   }
 }
 
-.reviews_container .reviews .review_item span {
+.reviews_container .reviews_wrapper .reviews .review_item span {
   text-align: center;
   font: 18px "Droid Serif", serif;
   font-style: italic;
 }
 
-.reviews_container .reviews .review_item span cite {
+.reviews_container .reviews_wrapper .reviews .review_item span cite {
   display: block;
   margin-top: 15px;
   font: 14px "Droid Serif", serif;
@@ -520,37 +540,41 @@ header .header_container .logo_box {
   font-weight: bold;
 }
 
+.news_container {
+  width: 100%;
+}
+
 @media only screen and (min-width: 1200px) {
-  .news_container {
+  .news_container .news_wrapper {
     width: 1200px;
     margin: 0 auto;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  .news_container {
+  .news_container .news_wrapper {
     width: 100%;
   }
 }
 
-.news_container .news_head {
+.news_container .news_wrapper .news_head {
   display: block;
   margin-top: 140px;
   text-align: center;
   padding-bottom: 40px;
 }
 
-.news_container .news_head span {
+.news_container .news_wrapper .news_head span {
   font: 35px "Merriweather", serif;
   font-weight: bold;
 }
 
-.news_container .news_posts {
+.news_container .news_wrapper .news_posts {
   width: 100%;
 }
 
 @media only screen and (min-width: 480px) {
-  .news_container .news_posts {
+  .news_container .news_wrapper .news_posts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -558,61 +582,61 @@ header .header_container .logo_box {
 }
 
 @media only screen and (max-width: 480px) {
-  .news_container .news_posts {
+  .news_container .news_wrapper .news_posts {
     display: block;
   }
 }
 
-.news_container .news_posts .news_item {
+.news_container .news_wrapper .news_posts .news_item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15px;
 }
 
 @media only screen and (min-width: 480px) {
-  .news_container .news_posts .news_item {
+  .news_container .news_wrapper .news_posts .news_item {
     width: 33.3%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .news_container .news_posts .news_item {
+  .news_container .news_wrapper .news_posts .news_item {
     width: 100%;
   }
 }
 
-.news_container .news_posts .news_item img {
+.news_container .news_wrapper .news_posts .news_item img {
   width: 100%;
 }
 
-.news_container .news_posts .news_item .news {
+.news_container .news_wrapper .news_posts .news_item .news {
   line-height: 28px;
   font-family: "Droid Serif", serif;
 }
 
-.news_container .news_posts .news_item .news p {
+.news_container .news_wrapper .news_posts .news_item .news p {
   font-size: 14px;
   color: #888888;
   padding-top: 12px;
   padding-bottom: 5px;
 }
 
-.news_container .news_posts .news_item .news a {
+.news_container .news_wrapper .news_posts .news_item .news a {
   text-decoration: none;
 }
 
-.news_container .news_posts .news_item .news a h1 {
+.news_container .news_wrapper .news_posts .news_item .news a h1 {
   font-size: 18px;
   color: #333333;
   font-weight: bold;
   cursor: pointer;
 }
 
-.news_container .news_posts .news_item .news a h1:hover {
+.news_container .news_wrapper .news_posts .news_item .news a h1:hover {
   color: #dd6e4b;
 }
 
-.news_container .view_all {
+.news_container .news_wrapper .view_all {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,5 +650,96 @@ header .header_container .logo_box {
   margin-top: 40px;
   padding-top: 6px;
   padding-bottom: 5px;
+}
+
+.video_review_container {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  margin-top: 140px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .video_review_container .video_review_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .video_review_container .video_review_wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .video_review_container .video_review_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .video_review_container .video_review_wrapper {
+    display: block;
+  }
+}
+
+.video_review_container .video_review_wrapper .video_review {
+  height: 338px;
+}
+
+@media only screen and (min-width: 990px) {
+  .video_review_container .video_review_wrapper .video_review {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .video_review_container .video_review_wrapper .video_review {
+    width: 100%;
+  }
+}
+
+.video_review_container .video_review_wrapper .review_box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 338px;
+  background-color: #e27653;
+  color: white;
+  padding: 45px;
+}
+
+@media only screen and (min-width: 990px) {
+  .video_review_container .video_review_wrapper .review_box {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .video_review_container .video_review_wrapper .review_box {
+    width: 100%;
+  }
+}
+
+.video_review_container .video_review_wrapper .review_box h1 {
+  font: 25px "Merriweather", serif;
+  padding-bottom: 6px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.video_review_container .video_review_wrapper .review_box p {
+  font: 16px "Droid Serif", serif;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  line-height: 24px;
+}
+
+.video_review_container .video_review_wrapper .review_box .read_more {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

@@ -11,3 +11,16 @@
         background-color: #333333;
     }
 }
+.second_button{
+    color: #333333;
+    padding: 15px 35px;
+    margin: 20px 0 6px 0;
+    background-color: #ffce69;
+    font: $standart_font $droid_serif;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover{
+        background-color: #fff;
+    }
+}

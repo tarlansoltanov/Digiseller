@@ -1,6 +1,10 @@
 @mixin full_container {
     width: 100%;
 }
+@mixin full_container_margin {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
 @mixin container {
     width: 1200px;
     margin: 0 auto;
