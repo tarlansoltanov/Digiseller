@@ -88,7 +88,9 @@
             box-sizing: border-box;
             font-family: $droid_serif;
             span {
-              display: block;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
               @media only screen and (max-width:1200px) {
                 height: 92px;
               }
@@ -101,7 +103,7 @@
                 color: white;
                 font-size: $small_font;
               }
-              span {
+              h2 {
                 color: $main_tg;
                 font-size: 25px;
                 margin-top: 15px;

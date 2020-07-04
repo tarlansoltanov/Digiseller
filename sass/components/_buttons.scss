@@ -1,0 +1,12 @@
+.main_button{
+    color: white;
+    padding: 15px 35px;
+    margin: 6px 0;
+    background-color: #e27653;
+    font: $standart_font $droid_serif;
+    font-weight: bold;
+    border-radius: 3px;
+    &:hover{
+        background-color: #333333;
+    }
+}
