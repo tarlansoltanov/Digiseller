@@ -44,12 +44,16 @@
           padding-top: 12px;
           padding-bottom: 5px;
         }
-        h1 {
-          font-size: $header_font;
-          color: #333333;
-          font-weight: bold;
-          &:hover {
-            color: $main_tg;
+        a {
+            text-decoration: none;
+          h1 {
+            font-size: $header_font;
+            color: #333333;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+              color: $main_tg;
+            }
           }
         }
       }

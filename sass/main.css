@@ -56,6 +56,7 @@ table {
   font: 16px "Droid Serif", serif;
   font-weight: bold;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .main_button:hover {
@@ -592,13 +593,18 @@ header .header_container .logo_box {
   padding-bottom: 5px;
 }
 
-.news_container .news_posts .news_item .news h1 {
+.news_container .news_posts .news_item .news a {
+  text-decoration: none;
+}
+
+.news_container .news_posts .news_item .news a h1 {
   font-size: 18px;
   color: #333333;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.news_container .news_posts .news_item .news h1:hover {
+.news_container .news_posts .news_item .news a h1:hover {
   color: #dd6e4b;
 }
 
