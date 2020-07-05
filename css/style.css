@@ -53,10 +53,10 @@ table {
 }
 
 .main_button {
-  color: white;
+  color: #fff;
   padding: 15px 35px;
   margin: 6px 0;
-  background-color: #e27653;
+  background-color: #d86843;
   font: 16px "Droid Serif", serif;
   font-weight: bold;
   border-radius: 3px;
@@ -64,7 +64,7 @@ table {
 }
 
 .main_button:hover {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .second_button {
@@ -95,7 +95,7 @@ table {
 }
 
 .main_input:focus {
-  border: 2px solid #e27653;
+  border: 2px solid #d86843;
   outline: none;
 }
 
@@ -631,7 +631,7 @@ header .header_container .logo_box {
 .news_container .news_wrapper .news_posts .news_item .news p {
   font-size: 14px;
   color: #888888;
-  padding-top: 12px;
+  padding-top: 9px;
   padding-bottom: 5px;
 }
 
@@ -641,7 +641,7 @@ header .header_container .logo_box {
 
 .news_container .news_wrapper .news_posts .news_item .news a h1 {
   font-size: 18px;
-  color: #333333;
+  color: #333;
   font-weight: bold;
   cursor: pointer;
 }
@@ -720,7 +720,7 @@ header .header_container .logo_box {
           box-sizing: border-box;
   min-width: 338px;
   background-color: #d86843;
-  color: white;
+  color: #fff;
   padding: 45px;
 }
 
@@ -862,7 +862,7 @@ header .header_container .logo_box {
 }
 
 .writer_container .writer_wrapper .writer .writer_box .writer_info span a:hover {
-  color: #333333;
+  color: #333;
 }
 
 .writer_container .writer_wrapper .newsletter_box {
@@ -1029,4 +1029,4 @@ footer .footer_wrapper .social_media .social_item:hover {
   background-color: #ffce69;
   border-color: #ffce69;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

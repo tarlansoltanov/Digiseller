@@ -8,17 +8,17 @@
       @include full_container;
     }
     .reviews_head {
-      margin-top: 190px;
+      margin-top: $biggest-px*19;
       display: block;
       text-align: center;
-      padding-bottom: 40px;
+      padding-bottom: $biggest-px*4;
       span {
-        font: 35px $merriweather;
+        font: $biggest_font $merriweather;
         font-weight: bold;
       }
     }
     .reviews {
-      line-height: 28px;
+      line-height: $line_height;
       width: 100%;
       @media only screen and (min-width: 480px) {
         display: flex;
@@ -37,7 +37,7 @@
         display: block;
         text-align: center;
         background: url(../images/quotes.png) no-repeat 0px 0px;
-        margin-bottom: 20px;
+        margin-bottom: $biggest-px*2;
         margin-left: 2%;
         padding-left: 3%;
         span {
@@ -46,7 +46,7 @@
           font-style: italic;
           cite {
             display: block;
-            margin-top: 15px;
+            margin-top: $normal-px*3;
             font: $small_font $droid_serif;
             font-style: normal;
             font-weight: bold;

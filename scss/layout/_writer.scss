@@ -1,8 +1,8 @@
 .writer_container {
   @include full_container_margin;
 
-  margin-top: 140px;
-  margin-bottom: 140px;
+  margin-top: $biggest-px*14;
+  margin-bottom: $biggest-px*14;
   .writer_wrapper {
     @media only screen and (min-width: 1200px) {
       @include container;
@@ -19,18 +19,18 @@
     .writer {
       @media only screen and (min-width: 800px) {
         max-width: 67%;
-        padding-right: 30px;
+        padding-right: $biggest-px*3;
       }
       @media only screen and (max-width: 800px) {
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: $biggest-px*8;
       }
       .writer_head {
-        font: 25px $merriweather;
+        font: $bigger_font $merriweather;
         font-weight: bold;
       }
       .writer_box {
-        margin-top: 40px;
+        margin-top: $biggest-px*4;
         @media only screen and (min-width: 480px) {
           display: flex;
         }
@@ -41,7 +41,7 @@
           @media only screen and (max-width: 480px) {
             width: 100%;
           }
-          margin-right: 30px;
+          margin-right: $biggest-px*3;
           img {
             width: 150px;
             height: 150px;
@@ -50,11 +50,11 @@
         }
         .writer_info {
           p {
-            padding-top: 6px;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
+            padding-top: $small-px*2;
+            padding-bottom: $normal-px;
+            margin-bottom: $biggest-px;
             font: $standart_font $droid_serif;
-            line-height: 28px;
+            line-height: $line_height;
             b {
               font-weight: bold;
             }
@@ -64,7 +64,7 @@
               color: $orange;
               font: $standart_font $droid_serif;
               &:hover {
-                color: #333333;
+                color: $footer;
               }
             }
           }
@@ -73,21 +73,21 @@
     }
     .newsletter_box {
       background-color: rgba(0, 0, 0, 0.05);
-      padding: 30px;
+      padding: $biggest-px*3;
       .newsletter_head {
-        font: 25px $merriweather;
+        font: $bigger_font $merriweather;
         font-weight: bold;
       }
       .newsletter_info {
-        padding-top: 10px;
+        padding-top: $biggest-px;
         font: $small_font $droid_serif;
-        line-height: 28px;
+        line-height: $line_height;
         font-style: italic;
         color: #444444;
       }
       .newsletter_subscribe {
         display: flex;
-        padding: 15px 35px 0 0;
+        padding: $normal-px*3 $biggest_font 0 0;
       }
     }
   }

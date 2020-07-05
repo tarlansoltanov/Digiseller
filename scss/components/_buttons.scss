@@ -1,0 +1,26 @@
+.main_button{
+    color: $white;
+    padding: $normal-px*3 $normal-px*7;
+    margin: $small-px*2 0;
+    background-color: $orange;
+    font: $standart_font $droid_serif;
+    font-weight: bold;
+    border-radius: $small-px;
+    cursor: pointer;
+    &:hover{
+        background-color: $footer;
+    }
+}
+.second_button{
+    color: #333333;
+    padding: $normal-px*3 $normal-px*7;
+    margin: $normal-px*4 0 $small-px*2 0;
+    background-color: $yellow;
+    font: $standart_font $droid_serif;
+    font-weight: bold;
+    border-radius: $small-px;
+    cursor: pointer;
+    &:hover{
+        background-color: $white;
+    }
+}

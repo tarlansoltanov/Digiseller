@@ -17,12 +17,12 @@
     .intro {
       color: $white;
       max-width: 80%;
-      margin-bottom: 20px;
+      margin-bottom: $normal-px*4;
       h1 {
         font: $biggest_font $merriweather;
         font-weight: bold;
         line-height: $bigger_font*2;
-        margin-bottom: 6px;
+        margin-bottom: $small-px*2;
       }
       p {
         font: $standart_font $droid_serif;

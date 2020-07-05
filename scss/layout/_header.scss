@@ -17,7 +17,7 @@ header {
     .logo_box {
       width: 200px;
       height: 65px;
-      padding: 20px 0;
+      padding: $normal-px*4 0;
     }
     @media only screen and (min-width: 1200px) {
       .mobile_button,
@@ -33,11 +33,11 @@ header {
             a {
               font: $normal_font $merriweather;
               font-weight: 500;
-              padding: 12px 20px;
+              padding: $small-px*4 $normal-px*4;
               color: $white;
-              margin: 0 5px;
+              margin: 0 $normal-px;
               text-decoration: none;
-              border-radius: 3px;
+              border-radius: $small-px;
               &:hover {
                 background-color: $footer;
               }
@@ -75,7 +75,7 @@ header {
         background-color: rgba(0, 0, 0, 0.9);
         ul {
           position: fixed;
-          padding-left: 15px;
+          padding-left: $normal-px*3;
           width: 284px;
           display: flex;
           flex-direction: column;
@@ -85,7 +85,7 @@ header {
               display: block;
               font: $normal_font $merriweather;
               font-weight: 500;
-              padding: 15px 20px;
+              padding: $normal-px*3 $normal-px*4;
               color: $white;
               text-decoration: none;
             }

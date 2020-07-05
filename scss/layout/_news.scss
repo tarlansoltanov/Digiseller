@@ -9,11 +9,11 @@
     }
     .news_head {
       display: block;
-      margin-top: 140px;
+      margin-top: $biggest-px*14;
       text-align: center;
-      padding-bottom: 40px;
+      padding-bottom: $biggest-px*4;
       span {
-        font: 35px $merriweather;
+        font: $biggest_font $merriweather;
         font-weight: bold;
       }
     }
@@ -33,24 +33,24 @@
           width: 100%;
         }
         box-sizing: border-box;
-        padding: 15px;
+        padding: $normal-px*3;
         img {
           width: 100%;
         }
         .news {
-          line-height: 28px;
+          line-height: $line_height;
           font-family: $droid_serif;
           p {
             font-size: $small_font;
             color: #888888;
-            padding-top: 12px;
-            padding-bottom: 5px;
+            padding-top: $small-px*3;
+            padding-bottom: $normal-px;
           }
           a {
             text-decoration: none;
             h1 {
               font-size: $normal_font;
-              color: #333333;
+              color: $footer;
               font-weight: bold;
               cursor: pointer;
               &:hover {
@@ -64,9 +64,9 @@
     .view_all {
       width: 100%;
       @include center;
-      margin-top: 40px;
-      padding-top: 6px;
-      padding-bottom: 5px;
+      margin-top: $biggest-px*4;
+      padding-top: $small-px*2;
+      padding-bottom: $normal-px;
     }
   }
 }

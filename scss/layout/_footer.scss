@@ -22,7 +22,7 @@ footer {
       }
     }
     .copyright {
-      padding: 10px 0;
+      padding: $biggest-px 0;
       color: $white;
       @media only screen and (min-width: 800px) {
         max-width: 50%;
@@ -31,13 +31,13 @@ footer {
         width: 100%;
       }
       h1 {
-        padding-top: 12px;
-        padding-bottom: 5px;
-        font: 15px $droid_serif;
-        line-height: 20px;
+        padding-top: $small-px*4;
+        padding-bottom: $normal-px;
+        font: $normal-px*3 $droid_serif;
+        line-height: $normal-px*4;
         a {
           font: 15px $droid_serif;
-          line-height: 20px;
+          line-height: $normal-px*4;
           color: $orange;
         }
       }
@@ -58,7 +58,7 @@ footer {
       }
       @media only screen and (max-width: 800px) {
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: $normal-px*4;
       }
       display: flex;
       justify-content: flex-end;
@@ -76,8 +76,8 @@ footer {
           width: auto;
         }
         &:hover {
-          background-color: #ffce69;
-          border-color: #ffce69;
+          background-color: $yellow;
+          border-color: $yellow;
         }
       }
     }
