@@ -49,12 +49,12 @@
           a {
             text-decoration: none;
             h1 {
-              font-size: $header_font;
+              font-size: $normal_font;
               color: #333333;
               font-weight: bold;
               cursor: pointer;
               &:hover {
-                color: $main_tg;
+                color: $orange;
               }
             }
           }

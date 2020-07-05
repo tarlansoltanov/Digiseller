@@ -96,16 +96,16 @@
               }
               padding: 10px;
               h1 {
-                color: white;
-                font-size: $header_font;
+                color: $white;
+                font-size: $normal_font;
               }
               p {
-                color: white;
+                color: $white;
                 font-size: $small_font;
               }
               h2 {
-                color: $main_tg;
-                font-size: 25px;
+                color: $orange;
+                font-size: $line_height;
                 margin-top: 15px;
                 font-weight: bold;
                 padding: 0;
