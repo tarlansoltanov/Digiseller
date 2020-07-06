@@ -5,12 +5,7 @@
   padding-top: $biggest_font*2;
   .banner_wrapper {
     text-align: center;
-    @media only screen and (min-width: 1200px) {
-      @include container;
-    }
-    @media only screen and (max-width: 1200px) {
-      @include full_container;  
-    }
+    @include res_container;
     margin-bottom: -60px;
     @include center;
     flex-direction: column;

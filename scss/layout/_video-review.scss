@@ -2,19 +2,8 @@
   @include full_container_margin;
   margin-top: $biggest-px*14;
   .video_review_wrapper {
-    @media only screen and (min-width: 1200px) {
-      @include container;
-    }
-    @media only screen and (max-width: 1200px) {
-      @include full_container;
-    }
-    @media only screen and (min-width: 990px) {
-      display: flex;
-    }
-    @media only screen and (max-width: 990px) {
-      display: block;
-    }
-
+    @include res_container;
+    @include res_display;
     .video_review {
         height: 338px;
       @media only screen and (min-width: 990px) {

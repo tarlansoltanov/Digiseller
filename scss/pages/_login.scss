@@ -1,0 +1,90 @@
+main {
+  @include res_container_margin;
+  @include res_display;
+  .login_container {
+      margin-bottom: 60px;
+      padding: 10px 0;
+    @media only screen and (min-width: 1200px) {
+      width: 72%;
+    }
+    @media only screen and (max-width: 1200px) {
+      @include full_container_margin;
+    }
+    .login_wrapper {
+      @media only screen and (min-width: 480px) {
+        width: 48%;
+      }
+      @media only screen and (max-width: 480px) {
+        width: 98%;
+      }
+      box-sizing: border-box;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      padding-right: 4%;
+      margin-right: 4%;
+      .login_head {
+        color: $footer;
+        font: $bigger_font - 3px $merriweather;
+        font-weight: bold;
+        margin-top: $biggest-px * 2;
+        margin-bottom: 8px;
+        padding-bottom: $small-px * 2;
+        line-height: $line_height + 2px;
+      }
+      .login_form {
+        .login_label {
+          padding-bottom: 20px;
+          p {
+            color: $black;
+            font: $small_font $droid_serif;
+            line-height: 22px;
+          }
+          input {
+            max-width: 370px;
+            margin: 0;
+          }
+        }
+        .remember_me {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+          line-height: 26px;
+          cursor: pointer;
+          input {
+            margin: 0;
+            margin-right: 5px;
+          }
+          p {
+            color: $black;
+            font: $small_font $droid_serif;
+          }
+          &:hover {
+            p {
+              color: $gray;
+            }
+          }
+        }
+        span {
+          a {
+            font: $standart_font $droid_serif;
+            color: $orange;
+            line-height: 28px;
+            &:hover {
+                color: #000;
+            }
+          }
+        }
+        .sign_in{
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+      }
+    }
+    span{
+        width: 100%;
+        @include padding-6-5;
+        font: $standart_font $droid_serif;
+        line-height: $line_height;
+        color: $black;
+    }
+  }
+}

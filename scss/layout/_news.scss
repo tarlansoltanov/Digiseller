@@ -1,12 +1,7 @@
 .news_container {
   @include full_container;
   .news_wrapper {
-    @media only screen and (min-width: 1200px) {
-      @include container;
-    }
-    @media only screen and (max-width: 1200px) {
-      @include full_container;
-    }
+    @include res_container;
     .news_head {
       display: block;
       margin-top: $biggest-px*14;
@@ -19,12 +14,7 @@
     }
     .news_posts {
       width: 100%;
-      @media only screen and (min-width: 480px) {
-        display: flex;
-      }
-      @media only screen and (max-width: 480px) {
-        display: block;
-      }
+      @include res_display;
       .news_item {
         @media only screen and (min-width: 480px) {
           width: 33.3%;

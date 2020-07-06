@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Google Fonts -->
     <link
@@ -20,8 +20,108 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-</head>
-<body>
-    
-</body>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <section class="header_container">
+        <!-- Logo -->
+        <div class="logo_box">
+          <img src="images/logo1.png" alt="" />
+        </div>
+        <!-- Mobile version menu button -->
+        <div class="mobile_button">
+          <i class="fa fa-th-list" aria-hidden="true"></i>
+        </div>
+        <!-- Navigation bar -->
+        <navbar id="navbar" class="hide">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Theme Features</a></li>
+            <li><a href="#">Buy This Theme</a></li>
+            <li><a href="#" class="chosen">Login</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </navbar>
+      </section>
+    </header>
+
+    <!-- Main Parts -->
+    <!-- Heading -->
+    <section class="heading_container">
+      <div class="heading">
+        <h1>Login</h1>
+        <p>Home » Login</p>
+      </div>
+    </section>
+    <!-- Login Form -->
+    <main>
+      <section class="login_container">
+        <div class="login_wrapper">
+          <div class="login_head">
+            Sign In
+          </div>
+          <div class="login_form">
+            <div class="login_label">
+              <p>Username</p>
+              <input type="text" class="main_input" />
+            </div>
+            <div class="login_label">
+              <p>Password</p>
+              <input type="password" class="main_input" />
+            </div>
+            <label class="remember_me">
+              <input type="checkbox" />
+              <p>Remember me on this computer.</p>
+            </label>
+            <span><a href="#">Forgot your password?</a></span>
+            <div class="sign_in">
+              <button class="main_button">Sign In</button>
+            </div>
+          </div>
+        </div>
+        <span>Registration is disabled on this website.</span>
+      </section>
+      <section class="advertising"></section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <section class="footer_wrapper">
+        <div class="copyright">
+          <h1>
+            Copyright © 2019 <a href="#">DigiSeller</a>. All Rights Reserved.
+          </h1>
+          <p>Designed by <img src="images/footer_logo.png" alt="" /></p>
+        </div>
+        <div class="social_media">
+          <a href="#">
+            <div class="social_item">
+              <img src="images/tw.png" alt="" />
+            </div>
+          </a>
+          <a href="#">
+            <div class="social_item">
+              <img src="images/fb.png" alt="" />
+            </div>
+          </a>
+          <a href="#">
+            <div class="social_item">
+              <img src="images/google.png" alt="" />
+            </div>
+          </a>
+          <a href="#">
+            <div class="social_item">
+              <img src="images/instagram.png" alt="" />
+            </div>
+          </a>
+        </div>
+      </section>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

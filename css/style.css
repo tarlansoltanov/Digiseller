@@ -52,6 +52,44 @@ table {
   border-spacing: 0;
 }
 
+.heading_container {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.heading_container .heading {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 1200px) {
+  .heading_container .heading {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .heading_container .heading {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+}
+
+.heading_container .heading h1 {
+  color: #444444;
+  font: 35px "Merriweather", serif;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.heading_container .heading p {
+  color: #888888;
+  font: 16px "Droid Serif", serif;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+
 .main_button {
   color: #fff;
   padding: 15px 35px;
@@ -61,6 +99,7 @@ table {
   font-weight: bold;
   border-radius: 3px;
   cursor: pointer;
+  border: none;
 }
 
 .main_button:hover {
@@ -587,7 +626,7 @@ header .header_container .logo_box {
   width: 100%;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 990px) {
   .news_container .news_wrapper .news_posts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -595,7 +634,7 @@ header .header_container .logo_box {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 990px) {
   .news_container .news_wrapper .news_posts {
     display: block;
   }
@@ -777,7 +816,7 @@ header .header_container .logo_box {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 990px) {
   .writer_container .writer_wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -785,7 +824,7 @@ header .header_container .logo_box {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 990px) {
   .writer_container .writer_wrapper {
     display: block;
   }
@@ -814,7 +853,7 @@ header .header_container .logo_box {
   margin-top: 40px;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 990px) {
   .writer_container .writer_wrapper .writer .writer_box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -822,7 +861,7 @@ header .header_container .logo_box {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 990px) {
   .writer_container .writer_wrapper .writer .writer_box {
     display: block;
   }
@@ -888,6 +927,147 @@ header .header_container .logo_box {
   display: -ms-flexbox;
   display: flex;
   padding: 15px 35px 0 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  main {
+    display: block;
+  }
+}
+
+main .login_container {
+  margin-bottom: 60px;
+  padding: 10px 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  main .login_container {
+    width: 72%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main .login_container {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+}
+
+main .login_container .login_wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding-right: 4%;
+  margin-right: 4%;
+}
+
+@media only screen and (min-width: 480px) {
+  main .login_container .login_wrapper {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main .login_container .login_wrapper {
+    width: 98%;
+  }
+}
+
+main .login_container .login_wrapper .login_head {
+  color: #333;
+  font: 22px "Merriweather", serif;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  line-height: 30px;
+}
+
+main .login_container .login_wrapper .login_form .login_label {
+  padding-bottom: 20px;
+}
+
+main .login_container .login_wrapper .login_form .login_label p {
+  color: #444444;
+  font: 14px "Droid Serif", serif;
+  line-height: 22px;
+}
+
+main .login_container .login_wrapper .login_form .login_label input {
+  max-width: 370px;
+  margin: 0;
+}
+
+main .login_container .login_wrapper .login_form .remember_me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+main .login_container .login_wrapper .login_form .remember_me input {
+  margin: 0;
+  margin-right: 5px;
+}
+
+main .login_container .login_wrapper .login_form .remember_me p {
+  color: #444444;
+  font: 14px "Droid Serif", serif;
+}
+
+main .login_container .login_wrapper .login_form .remember_me:hover p {
+  color: #888888;
+}
+
+main .login_container .login_wrapper .login_form span a {
+  font: 16px "Droid Serif", serif;
+  color: #d86843;
+  line-height: 28px;
+}
+
+main .login_container .login_wrapper .login_form span a:hover {
+  color: #000;
+}
+
+main .login_container .login_wrapper .login_form .sign_in {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+main .login_container span {
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  font: 16px "Droid Serif", serif;
+  line-height: 28px;
+  color: #444444;
 }
 
 footer {

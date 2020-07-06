@@ -1,0 +1,21 @@
+.heading_container{
+    @include full_container;
+    margin-top: $biggest-px*3 ;
+    margin-bottom: $biggest-px*5 ;
+    .heading{
+        @include res_container_margin;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        h1{
+            color: $black;
+            font: $biggest_font $merriweather;
+            font-weight: bold;
+            line-height: normal;
+        }
+        p{
+            color: $gray;
+            font: $standart_font $droid_serif;
+            margin-bottom: 20px;
+            line-height: $line_height;
+        }
+    }
+}

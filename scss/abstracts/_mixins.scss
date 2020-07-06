@@ -1,20 +1,44 @@
 @mixin full_container {
-    width: 100%;
+  width: 100%;
 }
 @mixin full_container_margin {
-    width: calc(100% - 20px);
-    margin: 0 10px;
+  width: calc(100% - 20px);
+  margin: 0 10px;
 }
 @mixin container {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
-@mixin center{
+@mixin res_container {
+  @media only screen and (min-width: 1200px) {
+    @include container;
+  }
+  @media only screen and (max-width: 1200px) {
+    @include full_container;
+  }
+}
+@mixin res_container_margin {
+  @media only screen and (min-width: 1200px) {
+    @include container;
+  }
+  @media only screen and (max-width: 1200px) {
+    @include full_container_margin;
+  }
+}
+@mixin res_display {
+  @media only screen and (min-width: 990px) {
     display: flex;
-    align-items: center;
-    justify-content: center;
+  }
+  @media only screen and (max-width: 990px) {
+    display: block;
+  }
 }
-@mixin padding-6-5{
-    padding-top: 6px;
-    padding-bottom: 5px;
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin padding-6-5 {
+  padding-top: 6px;
+  padding-bottom: 5px;
 }

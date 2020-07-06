@@ -4,18 +4,8 @@
   margin-top: $biggest-px*14;
   margin-bottom: $biggest-px*14;
   .writer_wrapper {
-    @media only screen and (min-width: 1200px) {
-      @include container;
-    }
-    @media only screen and (max-width: 1200px) {
-      @include full_container;
-    }
-    @media only screen and (min-width: 800px) {
-      display: flex;
-    }
-    @media only screen and (max-width: 800px) {
-      display: block;
-    }
+    @include res_container;
+    @include res_display;
     .writer {
       @media only screen and (min-width: 800px) {
         max-width: 67%;
@@ -31,12 +21,7 @@
       }
       .writer_box {
         margin-top: $biggest-px*4;
-        @media only screen and (min-width: 480px) {
-          display: flex;
-        }
-        @media only screen and (max-width: 480px) {
-          display: block;
-        }
+        @include res_display;
         .writer_img {
           @media only screen and (max-width: 480px) {
             width: 100%;
@@ -83,7 +68,7 @@
         font: $small_font $droid_serif;
         line-height: $line_height;
         font-style: italic;
-        color: #444444;
+        color: $black;
       }
       .newsletter_subscribe {
         display: flex;

@@ -2,12 +2,7 @@ footer {
   @include full_container;
   background-color: $footer;
   .footer_wrapper {
-    @media only screen and (min-width: 1200px) {
-      @include container;
-    }
-    @media only screen and (max-width: 1200px) {
-      @include full_container_margin;
-    }
+    @include res_container_margin;
     @media only screen and (min-width: 690px) {
       display: flex;
       justify-content: space-between;

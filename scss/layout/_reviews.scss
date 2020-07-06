@@ -1,12 +1,7 @@
 .reviews_container {
   @include full_container_margin;
   .reviews_wrapper {
-    @media only screen and (min-width: 1200px) {
-      @include container;
-    }
-    @media only screen and (max-width: 1200px) {
-      @include full_container;
-    }
+    @include res_container;
     .reviews_head {
       margin-top: $biggest-px*19;
       display: block;
