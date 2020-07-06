@@ -90,6 +90,32 @@ table {
   line-height: 28px;
 }
 
+.advertisiment {
+  padding-bottom: 60px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .advertisiment {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .advertisiment {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+}
+
+.advertisiment .ad {
+  line-height: 140%;
+}
+
+.advertisiment .ad img {
+  width: 300px;
+  height: 300px;
+}
+
 .main_button {
   color: #fff;
   padding: 15px 35px;
@@ -172,9 +198,22 @@ header .header_container {
 }
 
 header .header_container .logo_box {
-  width: 200px;
-  height: 65px;
   padding: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  header .header_container .logo_box {
+    width: 170px;
+    height: 55px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .header_container .logo_box {
+    width: 200px;
+    height: 65px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -929,6 +968,12 @@ header .header_container .logo_box {
   padding: 15px 35px 0 0;
 }
 
+main {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media only screen and (min-width: 1200px) {
   main {
     width: 1200px;
@@ -943,7 +988,7 @@ header .header_container .logo_box {
   }
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 1200px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -951,14 +996,14 @@ header .header_container .logo_box {
   }
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1200px) {
   main {
     display: block;
   }
 }
 
 main .login_container {
-  margin-bottom: 60px;
+  margin-bottom: 60px !important;
   padding: 10px 0;
 }
 

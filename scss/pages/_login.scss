@@ -1,15 +1,21 @@
 main {
   @include res_container_margin;
-  @include res_display;
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+  }
+  @media only screen and (max-width: 1200px) {
+    display: block;
+  }
+  justify-content: space-between;
   .login_container {
-      margin-bottom: 60px;
-      padding: 10px 0;
     @media only screen and (min-width: 1200px) {
       width: 72%;
     }
     @media only screen and (max-width: 1200px) {
       @include full_container_margin;
     }
+    margin-bottom: 60px !important;
+    padding: 10px 0;
     .login_wrapper {
       @media only screen and (min-width: 480px) {
         width: 48%;
@@ -69,22 +75,22 @@ main {
             color: $orange;
             line-height: 28px;
             &:hover {
-                color: #000;
+              color: #000;
             }
           }
         }
-        .sign_in{
-            margin-top: 20px;
-            padding-bottom: 20px;
+        .sign_in {
+          margin-top: 20px;
+          padding-bottom: 20px;
         }
       }
     }
-    span{
-        width: 100%;
-        @include padding-6-5;
-        font: $standart_font $droid_serif;
-        line-height: $line_height;
-        color: $black;
+    span {
+      width: 100%;
+      @include padding-6-5;
+      font: $standart_font $droid_serif;
+      line-height: $line_height;
+      color: $black;
     }
   }
 }
