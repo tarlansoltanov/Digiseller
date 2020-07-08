@@ -1,7 +1,7 @@
 .heading_container {
   @include full_container;
-  margin-top: $biggest-px * 3;
-  margin-bottom: $biggest-px * 5;
+  margin-top: 136.6px;
+  margin-bottom: $margin-x*5;
   .heading {
     @include res_container_margin;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -14,19 +14,19 @@
     p {
       color: $gray;
       font: $standart_font $droid_serif;
-      margin-bottom: $biggest-px * 2;
+      margin-bottom: 20px;
       line-height: $line_height;
     }
   }
 }
-.advertisiment {
+.advertisement {
   @media only screen and (min-width: 1200px) {
     width: 25%;
   }
   @media only screen and (max-width: 1200px) {
     @include full_container_margin;
   }
-  padding-bottom: $biggest-px * 6;
+  padding-bottom: 60px;
   .ad {
     line-height: 140%;
     img {

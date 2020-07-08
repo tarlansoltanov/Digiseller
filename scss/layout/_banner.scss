@@ -1,8 +1,9 @@
 .banner_container {
+  margin-top: 106.6px;
   @include full_container;
   background-color: $orange;
   @include center;
-  padding-top: $biggest_font*2;
+  padding-top: 70px;
   .banner_wrapper {
     text-align: center;
     @include res_container;
@@ -12,12 +13,12 @@
     .intro {
       color: $white;
       max-width: 80%;
-      margin-bottom: $normal-px*4;
+      margin-bottom: 20px;
       h1 {
         font: $biggest_font $merriweather;
         font-weight: bold;
-        line-height: $bigger_font*2;
-        margin-bottom: $small-px*2;
+        line-height: 50px;
+        margin-bottom: 6px;
       }
       p {
         font: $standart_font $droid_serif;

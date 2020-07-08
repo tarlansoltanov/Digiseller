@@ -15,7 +15,7 @@ main {
       @include full_container_margin;
     }
     margin-bottom: 60px !important;
-    padding: 10px 0;
+    padding: $padding-x 0;
     .login_wrapper {
       @media only screen and (min-width: 480px) {
         width: 48%;
@@ -31,14 +31,14 @@ main {
         color: $footer;
         font: $bigger_font - 3px $merriweather;
         font-weight: bold;
-        margin-top: $biggest-px * 2;
+        margin-top: $margin-x;
         margin-bottom: 8px;
-        padding-bottom: $small-px * 2;
-        line-height: $line_height + 2px;
+        padding-bottom: 6px;
+        line-height: 30px;
       }
       .login_form {
         .login_label {
-          padding-bottom: 20px;
+          padding-bottom: $padding-x * 2;
           p {
             color: $black;
             font: $small_font $droid_serif;
@@ -57,7 +57,7 @@ main {
           cursor: pointer;
           input {
             margin: 0;
-            margin-right: 5px;
+            margin-right: $margin-x/2;
           }
           p {
             color: $black;
@@ -73,15 +73,15 @@ main {
           a {
             font: $standart_font $droid_serif;
             color: $orange;
-            line-height: 28px;
+            line-height: $line_height;
             &:hover {
               color: #000;
             }
           }
         }
         .sign_in {
-          margin-top: 20px;
-          padding-bottom: 20px;
+          margin-top: $margin-x * 2;
+          padding-bottom: $padding-x * 2;
         }
       }
     }

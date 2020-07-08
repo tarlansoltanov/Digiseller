@@ -3,10 +3,10 @@
   .reviews_wrapper {
     @include res_container;
     .reviews_head {
-      margin-top: $biggest-px*19;
+      margin-top: 190px;
       display: block;
       text-align: center;
-      padding-bottom: $biggest-px*4;
+      padding-bottom: 40px;
       span {
         font: $biggest_font $merriweather;
         font-weight: bold;
@@ -28,11 +28,11 @@
         @media only screen and (max-width: 480px) {
           width: 95%;
         }
-        color: #444444;
+        color: $black;
         display: block;
         text-align: center;
         background: url(../images/quotes.png) no-repeat 0px 0px;
-        margin-bottom: $biggest-px*2;
+        margin-bottom: 20px;
         margin-left: 2%;
         padding-left: 3%;
         span {
@@ -41,7 +41,7 @@
           font-style: italic;
           cite {
             display: block;
-            margin-top: $normal-px*3;
+            margin-top: 15px;
             font: $small_font $droid_serif;
             font-style: normal;
             font-weight: bold;

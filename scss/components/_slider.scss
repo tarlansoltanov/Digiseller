@@ -20,10 +20,10 @@
 
   span {
     font-size: 60px;
-    color: white;
+    color: $white;
     cursor: pointer;
     &:hover {
-      color: #333;
+      color: $footer;
     }
   }
   .slider_inner {
@@ -39,29 +39,29 @@
     #slider {
       display: flex;
       .img_1 {
-        background-image: url(../images/book_1.jpg);
+        background-image: url(../images/book_8.jpg);
       }
       .img_2 {
-        background-image: url(../images/book_2.jpg);
+        background-image: url(../images/book_7.jpg);
       }
       .img_3 {
-        background-image: url(../images/book_3.jpg);
+        background-image: url(../images/book_9.jpg);
       }
       .img_4 {
-        background-image: url(../images/book_4.jpg);
+        background-image: url(../images/book_10.jpg);
       }
       .img_5 {
-        background-image: url(../images/book_5.jpg);
+        background-image: url(../images/book_11.jpg);
       }
       .img_6 {
-        background-image: url(../images/book_6.jpg);
+        background-image: url(../images/book_12.jpg);
       }
       .img_7 {
-        background-image: url(../images/book_7.jpg);
+        background-image: url(../images/book_15.jpg);
       }
       .slider_item {
         position: relative;
-        margin: 15px;
+        margin: $margin-y;
         width: 270px;
         height: 400px;
         background-position: center;
@@ -94,7 +94,7 @@
               @media only screen and (max-width:1200px) {
                 height: 92px;
               }
-              padding: 10px;
+              padding: $padding-x;
               h1 {
                 color: $white;
                 font-size: $normal_font;
@@ -106,7 +106,7 @@
               h2 {
                 color: $orange;
                 font-size: $line_height;
-                margin-top: 15px;
+                margin-top: $margin-y;
                 font-weight: bold;
                 padding: 0;
               }

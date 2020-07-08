@@ -1,0 +1,195 @@
+main {
+  .books_container {
+      padding-bottom: 40px;
+    @media only screen and (min-width: 1200px) {
+      width: 72%;
+    }
+    @media only screen and (max-width: 1200px) {
+      @include full_container_margin;
+    }
+    .books_view {
+      width: 100%;
+      padding-bottom: $padding-x;
+      margin-bottom: $margin-x * 2;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: flex-end;
+      .grid_view {
+        border: 1px solid #ccc;
+        line-height: 37px;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 4px;
+        margin-left: 6px;
+        cursor: pointer;
+        &.chosen {
+          border: 1px solid $orange;
+          color: $orange;
+        }
+      }
+      .list_view {
+        @extend .grid_view;
+      }
+      .sort_by {
+        margin-left: 6px;
+        select {
+          background-color: rgba(0, 0, 0, 0.05);
+          border: 1px solid rgba(0, 0, 0, 0.13);
+          border-radius: 4px;
+          padding: 9px 8px 5px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+    .books_wrapper {
+      margin: 0 -1 * $margin-y !important;
+      min-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      width: auto;
+      .book_post {
+        @media only screen and (min-width: 850px) {
+          width: 33%;
+        }
+        @media only screen and (max-width: 850px) {
+          width: 50%;
+        }
+        @media only screen and (max-width: 480px) {
+          width: 100%;
+        }
+        padding: 0 14px;
+        margin-bottom: $margin-x * 4;
+        box-sizing: border-box;
+        .book_cover {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .book_info {
+          margin-top: $margin-x/2;
+          h1 {
+            font-size: $normal_font + 2px;
+            font-family: $merriweather;
+            font-weight: bold;
+            color: $black;
+            line-height: $line_height + 2px;
+          }
+          .stars {
+            color: $stars;
+            font-size: $normal_font + 2px;
+            line-height: $line_height;
+          }
+          p {
+            font-size: $small_font;
+            font-family: $droid_serif;
+            color: $gray;
+            line-height: $line_height;
+            margin-top: $margin-x/2;
+          }
+          .book_review {
+            @extend .stars;
+            display: flex;
+            align-items: center;
+            i {
+              margin-right: $margin-x/2;
+            }
+            p {
+              line-height: $line_height;
+              color: $footer;
+              font-size: $standart_font;
+              a {
+                color: $orange;
+              }
+            }
+          }
+          span {
+            font-size: $bigger_font;
+            font-family: $droid_serif;
+            font-weight: bold;
+            color: $orange;
+            margin: $margin-x 0;
+            @include padding-6-5;
+            display: block;
+          }
+        }
+      }
+    }
+    .page_buttons {
+      padding: 15px 0;
+      text-align: center;
+    }
+  }
+  aside {
+    @media only screen and (min-width: 1200px) {
+      width: 25%;
+    }
+    @media only screen and (max-width: 1200px) {
+      @include full_container_margin;
+    }
+    .newsletter_box {
+      margin-bottom: 40px;
+      .newsletter_head {
+        font: 22px $merriweather;
+        font-weight: bold;
+      }
+      .newsletter_info {
+        padding-top: $padding-x;
+        font: $small_font $droid_serif;
+        line-height: $line_height;
+        font-style: italic;
+        color: $black;
+      }
+      .newsletter_subscribe {
+        display: flex;
+        padding: 15px 35px 0 0;
+      }
+    }
+    .news_small {
+      padding-bottom: 40px;
+      .news_head {
+        color: $footer;
+        font-family: $merriweather;
+        font-size: 22px;
+        margin-bottom: 8px;
+        font-weight: bold;
+        line-height: 30px;
+      }
+      ul {
+        width: 100%;
+        li {
+          padding: 15px 0;
+          display: flex;
+          .news_img {
+            max-width: 30%;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          .news_content {
+            font-family: $droid_serif;
+            padding-left: 15px;
+            p {
+              color: $gray;
+              font-size: $small_font;
+              line-height: 140%;
+            }
+            a {
+              color: $footer;
+              font-size: 15px;
+              font-weight: bold;
+              line-height: 140%;
+              &:hover {
+                color: $orange;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

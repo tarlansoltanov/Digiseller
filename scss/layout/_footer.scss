@@ -17,7 +17,7 @@ footer {
       }
     }
     .copyright {
-      padding: $biggest-px 0;
+      padding: $padding-x 0;
       color: $white;
       @media only screen and (min-width: 800px) {
         max-width: 50%;
@@ -26,13 +26,13 @@ footer {
         width: 100%;
       }
       h1 {
-        padding-top: $small-px*4;
-        padding-bottom: $normal-px;
-        font: $normal-px*3 $droid_serif;
-        line-height: $normal-px*4;
+        padding-top: 12px;
+        padding-bottom: $padding-x/2;
+        font: 15px $droid_serif;
+        line-height: 20px;
         a {
           font: 15px $droid_serif;
-          line-height: $normal-px*4;
+          line-height: 20px;
           color: $orange;
         }
       }
@@ -43,7 +43,7 @@ footer {
         line-height: $line_height;
         img {
           vertical-align: middle;
-          padding-bottom: $normal_font/6;
+          padding-bottom: 3px;
         }
       }
     }
@@ -53,7 +53,7 @@ footer {
       }
       @media only screen and (max-width: 800px) {
         width: 100%;
-        padding-bottom: $normal-px*4;
+        padding-bottom: $padding-x*2;
       }
       display: flex;
       justify-content: flex-end;
@@ -63,7 +63,7 @@ footer {
         height: 45px;
         background: #292929;
         border: 1px solid #979797;
-        margin-right: $standart_font/3;
+        margin-right: 3px;
         border-radius: 50%;
         @include center;
         img {

@@ -1,6 +1,6 @@
 .video_review_container {
   @include full_container_margin;
-  margin-top: $biggest-px*14;
+  margin-top: 140px;
   .video_review_wrapper {
     @include res_container;
     @include res_display;
@@ -18,7 +18,7 @@
       min-width: 338px;
       background-color: $orange;
       color: $white;
-      padding: $biggest-px*4+5px;
+      padding: 45px;
       @media only screen and (min-width: 990px) {
         width: 50%;
       }
@@ -27,15 +27,15 @@
       }
       h1 {
         font: $bigger_font $merriweather;
-        padding-bottom: $small-px*2;
+        padding-bottom: 6px;
         font-weight: bold;
-        line-height: $biggest_font+1px;
+        line-height: 36px;
       }
       p {
         font: $standart_font $droid_serif;
-        padding-top: $small-px*2;
-        padding-bottom: $normal-px;
-        line-height: $line_height - 4px;
+        padding-top: 6px;
+        padding-bottom: 5px;
+        line-height: 24px;
       }
       .read_more {
         width: 100%;

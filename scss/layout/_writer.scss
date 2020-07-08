@@ -1,32 +1,32 @@
 .writer_container {
   @include full_container_margin;
 
-  margin-top: $biggest-px*14;
-  margin-bottom: $biggest-px*14;
+  margin-top: 140px;
+  margin-bottom: 140px;
   .writer_wrapper {
     @include res_container;
     @include res_display;
     .writer {
       @media only screen and (min-width: 800px) {
         max-width: 67%;
-        padding-right: $biggest-px*3;
+        padding-right: $padding-x * 3;
       }
       @media only screen and (max-width: 800px) {
         width: 100%;
-        margin-bottom: $biggest-px*8;
+        margin-bottom: $margin-x * 8;
       }
       .writer_head {
         font: $bigger_font $merriweather;
         font-weight: bold;
       }
       .writer_box {
-        margin-top: $biggest-px*4;
+        margin-top: $margin-x * 4;
         @include res_display;
         .writer_img {
           @media only screen and (max-width: 480px) {
             width: 100%;
           }
-          margin-right: $biggest-px*3;
+          margin-right: $margin-x * 3;
           img {
             width: 150px;
             height: 150px;
@@ -35,9 +35,8 @@
         }
         .writer_info {
           p {
-            padding-top: $small-px*2;
-            padding-bottom: $normal-px;
-            margin-bottom: $biggest-px;
+            @include padding-6-5;
+            margin-bottom: $margin-x;
             font: $standart_font $droid_serif;
             line-height: $line_height;
             b {
@@ -58,13 +57,13 @@
     }
     .newsletter_box {
       background-color: rgba(0, 0, 0, 0.05);
-      padding: $biggest-px*3;
+      padding: $padding-x * 3;
       .newsletter_head {
         font: $bigger_font $merriweather;
         font-weight: bold;
       }
       .newsletter_info {
-        padding-top: $biggest-px;
+        padding-top: $padding-x;
         font: $small_font $droid_serif;
         line-height: $line_height;
         font-style: italic;
@@ -72,7 +71,7 @@
       }
       .newsletter_subscribe {
         display: flex;
-        padding: $normal-px*3 $biggest_font 0 0;
+        padding: 15px 35px 0 0;
       }
     }
   }

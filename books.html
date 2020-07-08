@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <section class="header_container">
+        <!-- Logo -->
+        <div class="logo_box">
+          <img src="images/logo1.png" alt="" />
+        </div>
+        <!-- Mobile version menu button -->
+        <div class="mobile_button">
+          <i class="fa fa-th-list" aria-hidden="true"></i>
+        </div>
+        <!-- Navigation bar -->
+        <navbar id="navbar" class="hide">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html" class="chosen">Books</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Theme Features</a></li>
+            <li><a href="#">Buy This Theme</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </navbar>
+      </section>
+    </header>
+
+    <!-- Main Parts -->
+    <!-- Heading -->
+    <section class="heading_container">
+      <div class="heading">
+        <h1>Products</h1>
+        <p>Home > Products</p>
+      </div>
+    </section>
+    <!-- Main Parts -->
+    <main>
+      <div class="books_container">
+        <div class="books_view">
+          <div class="grid_view chosen">
+            <i class="fas fa-th"></i>
+          </div>
+          <div class="list_view">
+            <i class="fas fa-th-list"></i>
+          </div>
+          <div class="sort_by">
+            <select name="sort_by" id="sort_by">
+              <option value="Sort By">Sort By</option>
+              <option value="Alphabetical">Alphabetical</option>
+              <option value="Title Ascending">Title Ascending</option>
+              <option value="Title Descending">Title Descending</option>
+              <option value="Publish Date Ascending"
+                >Publish Date Ascending</option
+              >
+              <option value="Publish Date Descending"
+                >Publish Date Descending</option
+              >
+              <option value="Reviews">Reviews</option>
+              <option value="Rating">Rating</option>
+              <option value="Random">Random</option>
+            </select>
+          </div>
+        </div>
+        <div class="books_wrapper">
+          <div class="book_post">
+            <div class="book_cover">
+              <img src="images/book_1.jpg" alt="" />
+            </div>
+            <div class="book_info">
+              <h1>Confederacy of Dunces</h1>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>By Max Brockman</p>
+              <div class="book_review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <p>out of 3 <a href="#">reviews</a></p>
+              </div>
+              <span>$40.00</span>
+            </div>
+          </div>
+          <div class="book_post">
+            <div class="book_cover">
+              <img src="images/book_2.jpg" alt="" />
+            </div>
+            <div class="book_info">
+              <h1>The Norton Book of Nature Writing</h1>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>By Jane B. Reece</p>
+              <div class="book_review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <p>out of 3 <a href="#">reviews</a></p>
+              </div>
+              <span>$40.00</span>
+            </div>
+          </div>
+          <div class="book_post">
+            <div class="book_cover">
+              <img src="images/book_3.jpg" alt="" />
+            </div>
+            <div class="book_info">
+              <h1>A Song of Ice and Fire</h1>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>By Gerard J. Tortora</p>
+              <div class="book_review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <p>out of 3 <a href="#">reviews</a></p>
+              </div>
+              <span>$40.00</span>
+            </div>
+          </div>
+          <div class="book_post">
+            <div class="book_cover">
+              <img src="images/book_4.jpg" alt="" />
+            </div>
+            <div class="book_info">
+              <h1>Prehistoric Life</h1>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>By DK Publishing</p>
+              <div class="book_review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <p>out of 3 <a href="#">reviews</a></p>
+              </div>
+              <span>$14.49</span>
+            </div>
+          </div>
+          <div class="book_post">
+            <div class="book_cover">
+              <img src="images/book_5.jpg" alt="" />
+            </div>
+            <div class="book_info">
+              <h1>Natural History</h1>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>By Martin Clayton</p>
+              <div class="book_review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <p>out of 3 <a href="#">reviews</a></p>
+              </div>
+              <span>$40.00</span>
+            </div>
+          </div>
+          <div class="book_post">
+            <div class="book_cover">
+              <img src="images/book_6.jpg" alt="" />
+            </div>
+            <div class="book_info">
+              <h1>American Earth</h1>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>By Florence Caplow</p>
+              <div class="book_review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <p>out of 3 <a href="#">reviews</a></p>
+              </div>
+              <span>$24.99</span>
+            </div>
+          </div>
+          <div class="book_post">
+            <div class="book_cover">
+              <img src="images/book_7.jpg" alt="" />
+            </div>
+            <div class="book_info">
+              <h1>Gilles Larrain Idols</h1>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>By Giles Larrain</p>
+              <div class="book_review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <p>out of 3 <a href="#">reviews</a></p>
+              </div>
+              <span>$24.99</span>
+            </div>
+          </div>
+          <div class="book_post">
+            <div class="book_cover">
+              <img src="images/book_8.jpg" alt="" />
+            </div>
+            <div class="book_info">
+              <h1>Your Camera Loves You Learn to Love It Back</h1>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>By Khara Plicanic</p>
+              <div class="book_review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <p>out of 3 <a href="#">reviews</a></p>
+              </div>
+              <span>$24.99</span>
+            </div>
+          </div>
+          <div class="book_post">
+            <div class="book_cover">
+              <img src="images/book_9.jpg" alt="" />
+            </div>
+            <div class="book_info">
+              <h1>Food Photography</h1>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>By Nicole S. Young</p>
+              <div class="book_review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <p>out of 3 <a href="#">reviews</a></p>
+              </div>
+              <span>$40.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="page_buttons">
+          <button class="page_button chosen">1</button>
+          <button class="page_button">2</button>
+          <button class="page_button">NEXT</button>
+        </div>
+      </div>
+      <aside>
+        <div class="advertisement">
+          <div class="ad">
+            <img src="images/advertisement2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="newsletter_box">
+          <div class="newsletter_head">
+            Subscribe Newsletter
+          </div>
+          <div class="newsletter_info">
+            Signup to receive our latest news and be informed of any special
+            offers.
+          </div>
+          <input type="text" class="main_input" value="Your Name" />
+          <input type="text" class="main_input" value="Your Mail Address" />
+          <div class="newsletter_subscribe">
+            <div class="main_button">Subscribe</div>
+          </div>
+        </div>
+        <div class="news_small">
+          <div class="news_head">
+            Latest News
+          </div>
+          <ul>
+            <li>
+              <div class="news_img">
+                <img src="images/news_1.jpg" alt="" />
+              </div>
+              <div class="news_content">
+                <p>July 1, 2017</p>
+                <a href="#">Unlimited color options</a>
+              </div>
+            </li>
+            <li>
+              <div class="news_img">
+                <img src="images/news_2.jpg" alt="" />
+              </div>
+              <div class="news_content">
+                <p>July 1, 2017</p>
+                <a href="#">One click auto install !</a>
+              </div>
+            </li>
+            <li>
+              <div class="news_img">
+                <img src="images/news_3.jpg" alt="" />
+              </div>
+              <div class="news_content">
+                <p>July 1, 2017</p>
+                <a href="#">This wordpress theme is Responsive</a>
+              </div>
+            </li>
+            <li>
+              <div class="news_img">
+                <img src="images/news_4.jpg" alt="" />
+              </div>
+              <div class="news_content">
+                <p>July 1, 2017</p>
+                <a href="#">Discount</a>
+              </div>
+            </li>
+            <li>
+              <div class="news_img">
+                <img src="images/news_5.jpg" alt="" />
+              </div>
+              <div class="news_content">
+                <p>July 1, 2017</p>
+                <a href="#">Multilingual and translation-ready</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <!-- Footer -->
+
+    <footer>
+      <section class="footer_wrapper">
+        <div class="copyright">
+          <h1>
+            Copyright © 2019 <a href="#">DigiSeller</a>. All Rights Reserved.
+          </h1>
+          <p>Designed by <img src="images/footer_logo.png" alt="" /></p>
+        </div>
+        <div class="social_media">
+          <a href="#">
+            <div class="social_item">
+              <img src="images/tw.png" alt="" />
+            </div>
+          </a>
+          <a href="#">
+            <div class="social_item">
+              <img src="images/fb.png" alt="" />
+            </div>
+          </a>
+          <a href="#">
+            <div class="social_item">
+              <img src="images/google.png" alt="" />
+            </div>
+          </a>
+          <a href="#">
+            <div class="social_item">
+              <img src="images/instagram.png" alt="" />
+            </div>
+          </a>
+        </div>
+      </section>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

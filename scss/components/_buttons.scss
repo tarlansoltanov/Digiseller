@@ -1,11 +1,11 @@
 .main_button{
     color: $white;
-    padding: $normal-px*3 $normal-px*7;
-    margin: $small-px*2 0;
+    padding: 15px 35px;
+    margin: 6px 0;
     background-color: $orange;
     font: $standart_font $droid_serif;
     font-weight: bold;
-    border-radius: $small-px;
+    border-radius: 3px;
     cursor: pointer;
     border: none;
     &:hover{
@@ -13,15 +13,35 @@
     }
 }
 .second_button{
-    color: #333333;
-    padding: $normal-px*3 $normal-px*7;
-    margin: $normal-px*4 0 $small-px*2 0;
+    color: $footer;
+    padding: 15px 35px;
+    margin: 20px 0 6px 0;
     background-color: $yellow;
     font: $standart_font $droid_serif;
     font-weight: bold;
-    border-radius: $small-px;
+    border-radius: 3px;
     cursor: pointer;
     &:hover{
         background-color: $white;
+    }
+}
+
+.page_button{
+    background: $footer;
+    border-radius: 4px;
+    color: #fff;
+    padding: 8px 18px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: $droid_serif;
+    outline: none;
+    border: none;
+    line-height: $line_height;
+    font-weight: bold;
+    &:hover{
+        background-color: $orange;
+    }
+    &.chosen{
+        background-color: $orange;
     }
 }

@@ -4,9 +4,9 @@
     @include res_container;
     .news_head {
       display: block;
-      margin-top: $biggest-px*14;
+      margin-top: 140px;
       text-align: center;
-      padding-bottom: $biggest-px*4;
+      padding-bottom: $padding-x*4;
       span {
         font: $biggest_font $merriweather;
         font-weight: bold;
@@ -23,7 +23,7 @@
           width: 100%;
         }
         box-sizing: border-box;
-        padding: $normal-px*3;
+        padding: $padding-y;
         img {
           width: 100%;
         }
@@ -32,9 +32,9 @@
           font-family: $droid_serif;
           p {
             font-size: $small_font;
-            color: #888888;
-            padding-top: $small-px*3;
-            padding-bottom: $normal-px;
+            color: $gray;
+            padding-top: 9px;
+            padding-bottom: $padding-x/2;
           }
           a {
             text-decoration: none;
@@ -54,9 +54,9 @@
     .view_all {
       width: 100%;
       @include center;
-      margin-top: $biggest-px*4;
-      padding-top: $small-px*2;
-      padding-bottom: $normal-px;
+      margin-top: $margin-x*4;
+      padding-top: 6px;
+      padding-bottom: $padding-x/2;
     }
   }
 }
