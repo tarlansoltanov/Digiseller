@@ -1,50 +1,57 @@
 .news_container {
   @include full_container;
+  @include relative;
+  margin-top: $margin-elg * 3.5;
+  margin-bottom: $margin-elg * 3.5;
   .news_wrapper {
     @include res_container;
     .news_head {
-      display: block;
-      margin-top: 140px;
-      text-align: center;
-      padding-bottom: $padding-x*4;
+      @include display(block);
+      @include text-align(center);
+      padding-bottom: $padding-elg * 2;
       span {
-        font: $biggest_font $merriweather;
-        font-weight: bold;
+        @include font($merriweather, $font_size-elg, $bold, "", "");
       }
     }
     .news_posts {
-      width: 100%;
-      @include res_display;
+      @include full_container;
+      @include res_display(480px);
       .news_item {
         @media only screen and (min-width: 480px) {
           width: 33.3%;
         }
         @media only screen and (max-width: 480px) {
-          width: 100%;
+          @include full_container;
         }
-        box-sizing: border-box;
-        padding: $padding-y;
+        @include border-box;
+        padding: $padding-md * 3;
         img {
-          width: 100%;
+          @include full_container;
         }
         .news {
-          line-height: $line_height;
-          font-family: $droid_serif;
           p {
-            font-size: $small_font;
-            color: $gray;
-            padding-top: 9px;
-            padding-bottom: $padding-x/2;
+            @include font(
+              $droid_serif,
+              $font_size-esm,
+              $normal,
+              $sub-text-color,
+              $line_height-md
+            );
+            padding-top: $padding-md * 2;
+            padding-bottom: $padding-md;
           }
           a {
-            text-decoration: none;
             h1 {
-              font-size: $normal_font;
-              color: $footer;
-              font-weight: bold;
-              cursor: pointer;
+              @include font(
+                $droid_serif,
+                $font_size-md,
+                $bold,
+                $secondary-text-color,
+                $line_height-md
+              );
+              @include pointer;
               &:hover {
-                color: $orange;
+                color: $price_link_color;
               }
             }
           }
@@ -52,11 +59,10 @@
       }
     }
     .view_all {
-      width: 100%;
+      @include full_container;
+      @include padding-6-5;
       @include center;
-      margin-top: $margin-x*4;
-      padding-top: 6px;
-      padding-bottom: $padding-x/2;
+      margin-top: $margin-lg * 2;
     }
   }
 }

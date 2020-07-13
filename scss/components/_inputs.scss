@@ -1,14 +1,13 @@
 .main_input {
-  padding: 12px;
-  margin-top: 12px;
-  display: block;
-  border: 2px solid rgba(0,0,0,.18);
-  font: 15px $droid_serif;
-  color: #666;
-  width: 100%;
-  box-sizing: border-box;
+  @include border-box;
+  @include display(block);
+  @include full_container;
+  padding: $padding-sm*4;
+  margin-top: $margin-sm*4;
+  border: $border-width-md solid rgba(0,0,0,.18);
+  @include font($droid_serif, $font_size-sm, $normal, $input-text-color,"");
   &:focus {
-    border: 2px solid $orange;
+    border: $border-width-md solid $main-border-color;
     outline: none;
   }
 }

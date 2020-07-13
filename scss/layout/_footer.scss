@@ -1,49 +1,62 @@
 footer {
   @include full_container;
-  background-color: $footer;
+  background-color: $secondary-bg-color;
   .footer_wrapper {
     @include res_container_margin;
     @media only screen and (min-width: 690px) {
-      display: flex;
-      justify-content: space-between;
+      @include flex(flex, row, space-between, left, nowrap);
     }
     @media only screen and (max-width: 690px) {
-      display: block;
-      .copyright{
-          text-align: center;
+      @include display(block);
+      .copyright {
+        @include text-align(center);
       }
-      .social_media{
-          justify-content: center !important;
+      .social_media {
+        justify-content: center !important;
       }
     }
     .copyright {
-      padding: $padding-x 0;
-      color: $white;
+      padding: $padding-md * 2 0;
+      color: $main-text-color;
       @media only screen and (min-width: 800px) {
         max-width: 50%;
       }
       @media only screen and (max-width: 800px) {
-        width: 100%;
+        @include full_container;
       }
       h1 {
-        padding-top: 12px;
-        padding-bottom: $padding-x/2;
-        font: 15px $droid_serif;
-        line-height: 20px;
+        @include font(
+          $droid_serif,
+          $font_size-sm,
+          $normal,
+          "",
+          $line_height-esm
+        );
+        padding-top: $padding-sm * 4;
+        padding-bottom: $padding-md;
         a {
-          font: 15px $droid_serif;
-          line-height: 20px;
-          color: $orange;
+          @include font(
+            $droid_serif,
+            $font_size-sm,
+            $normal,
+            $price_link_color,
+            $line_height-esm
+          );
         }
       }
       p {
         @include padding-6-5;
+        @include font(
+          $droid_serif,
+          $font_size-esm,
+          $normal,
+          "",
+          $line_height-md
+        );
         padding-top: 0;
-        font: $small_font $droid_serif;
-        line-height: $line_height;
         img {
           vertical-align: middle;
-          padding-bottom: 3px;
+          padding-bottom: $padding-sm;
         }
       }
     }
@@ -52,27 +65,24 @@ footer {
         max-width: 50%;
       }
       @media only screen and (max-width: 800px) {
-        width: 100%;
-        padding-bottom: $padding-x*2;
+        @include full_container;
+        padding-bottom: $padding-lg * 2;
       }
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+      @include flex(flex, row, flex-end, center, nowrap);
       .social_item {
-        width: 45px;
-        height: 45px;
-        background: #292929;
-        border: 1px solid #979797;
-        margin-right: 3px;
-        border-radius: 50%;
+        @include border(
+          $border-width-sm,
+          solid,
+          $sm_link-border-color,
+          $border-radius-half
+        );
         @include center;
-        img {
-          height: auto;
-          width: auto;
-        }
+        @include width-height($social-box, $social-box);
+        background: lighter($secondary-bg-color, 1);
+        margin-right: $margin-lg;
         &:hover {
-          background-color: $yellow;
-          border-color: $yellow;
+          background-color: $secondary_btn_color;
+          border-color: $secondary_btn_color;
         }
       }
     }

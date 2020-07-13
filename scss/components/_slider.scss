@@ -1,11 +1,11 @@
 .slider_container {
-  @media only screen and (min-width: 1200px) {
-    width: 1275px;
+  @media only screen and (min-width: $main_bp) {
+    width: $main_bp + 75px;
   }
-  @media only screen and (max-width: 1200px) {
-    width: 100%;
+  @media only screen and (max-width: $main_bp) {
+    @include full_container;
     span {
-      position: absolute;
+      @include position(absolute, "", "", "", "");
     }
     #leftButton {
       z-index: 1;
@@ -15,29 +15,27 @@
       right: 0;
     }
   }
-  display: flex;
-  align-items: center;
-
+  @include flex(flex, row, center, center, nowrap);
+  margin-bottom: -3 * $margin-elg;
   span {
-    font-size: 60px;
-    color: $white;
-    cursor: pointer;
+    @include font($merriweather, $font_size-big, $normal, $main-text-color, "");
+    @include pointer;
     &:hover {
-      color: $footer;
+      color: $secondary-text-color;
     }
   }
   .slider_inner {
-    @media only screen and (min-width: 1200px) {
-      width: 100%;
+    @media only screen and (min-width: $main_bp) {
+      @include full_container;
     }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: $main_bp) {
       width: calc(100% - 75px);
-      margin-left: 29px;
+      margin-right: $margin-lg * 1;
     }
-
-    overflow: hidden;
+    @include O-hidden;
     #slider {
-      display: flex;
+      @include display(flex);
+      @include O-hidden;
       .img_1 {
         background-image: url(../images/book_8.jpg);
       }
@@ -60,59 +58,56 @@
         background-image: url(../images/book_15.jpg);
       }
       .slider_item {
-        position: relative;
-        margin: $margin-y;
-        width: 270px;
-        height: 400px;
-        background-position: center;
-        background-size: 100%;
-        transition: all 0.5s ease;
-        &:hover {
-          background-size: 110%;
-        }
+        @include relative;
+        @include photo-effect;
+        @include book_box;
+        margin: $margin-md * 3;
         .overlay {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          color: transparent;
-          text-align: left;
+          @include flex(flex, column, flex-end, flex-start, nowrap);
+          @include full_box;
+          @include position(absolute, 0, 0, 0, 0);
+          @include text-align(left);
+          color: $transparent;
           span {
-            color: transparent;
+            color: $transparent;
           }
           &:hover {
-            box-sizing: border-box;
-            font-family: $droid_serif;
+            @include border-box;
             span {
-              display: flex;
-              flex-direction: column;
-              justify-content: flex-end;
-              @media only screen and (max-width:1200px) {
-                height: 92px;
-              }
-              padding: $padding-x;
+              @include flex(flex, column, flex-end, flex-start, nowrap);
+              padding: $padding-md * 2;
               h1 {
-                color: $white;
-                font-size: $normal_font;
+                @include font(
+                  $droid_serif,
+                  $font_size-md,
+                  $bold,
+                  $main-text-color,
+                  ""
+                );
               }
               p {
-                color: $white;
-                font-size: $small_font;
+                @include font(
+                  $droid_serif,
+                  $font_size-esm,
+                  $normal,
+                  $main-text-color,
+                  ""
+                );
               }
               h2 {
-                color: $orange;
-                font-size: $line_height;
-                margin-top: $margin-y;
-                font-weight: bold;
+                @include font(
+                  $droid_serif,
+                  $font_size-lg,
+                  $bold,
+                  $price_link_color,
+                  ""
+                );
+                margin-top: $margin-md * 3;
                 padding: 0;
               }
             }
 
-            background-color: rgba($color: #000000, $alpha: 0.5);
+            background-color: rgba($black, 0.5);
           }
         }
       }

@@ -1,11 +1,6 @@
 main {
   @include res_container_margin;
-  @media only screen and (min-width: 1200px) {
-    display: flex;
-  }
-  @media only screen and (max-width: 1200px) {
-    display: block;
-  }
+  @include res_display(1200px);
   justify-content: space-between;
   .login_container {
     @media only screen and (min-width: 1200px) {
@@ -14,8 +9,8 @@ main {
     @media only screen and (max-width: 1200px) {
       @include full_container_margin;
     }
-    margin-bottom: 60px !important;
-    padding: $padding-x 0;
+    margin-bottom: $margin-elg * 3 !important;
+    padding: $padding-md * 2 0;
     .login_wrapper {
       @media only screen and (min-width: 480px) {
         width: 48%;
@@ -23,26 +18,33 @@ main {
       @media only screen and (max-width: 480px) {
         width: 98%;
       }
-      box-sizing: border-box;
-      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      @include border-box;
+      border-right: $border-width-sm solid rgba(0, 0, 0, 0.1);
       padding-right: 4%;
       margin-right: 4%;
       .login_head {
-        color: $footer;
-        font: $bigger_font - 3px $merriweather;
-        font-weight: bold;
-        margin-top: $margin-x;
-        margin-bottom: 8px;
-        padding-bottom: 6px;
-        line-height: 30px;
+        @include font(
+          $merriweather,
+          $font_size-section-head,
+          $bold,
+          $secondary-text-color,
+          $line_height-lg
+        );
+        margin-top: $margin-md * 2;
+        margin-bottom: $margin-esm * 4;
+        padding-bottom: $padding-sm * 2;
       }
       .login_form {
         .login_label {
-          padding-bottom: $padding-x * 2;
+          padding-bottom: $padding-lg * 2;
           p {
-            color: $black;
-            font: $small_font $droid_serif;
-            line-height: 22px;
+            @include font(
+              $droid_serif,
+              $font_size-esm,
+              $bold,
+              $third-text-color,
+              $line_height-md
+            );
           }
           input {
             max-width: 370px;
@@ -50,47 +52,59 @@ main {
           }
         }
         .remember_me {
-          display: flex;
-          align-items: center;
-          margin-bottom: 8px;
-          line-height: 26px;
-          cursor: pointer;
+          @include flex(flex, row, left, center, nowrap);
+          margin-bottom: $margin-esm * 4;
+          line-height: $line_height-md;
+          @include pointer;
           input {
             margin: 0;
-            margin-right: $margin-x/2;
+            margin-right: $margin-md;
           }
           p {
-            color: $black;
-            font: $small_font $droid_serif;
+            @include font(
+              $droid_serif,
+              $font_size-esm,
+              $bold,
+              $third-text-color,
+              ""
+            );
           }
           &:hover {
             p {
-              color: $gray;
+              color: $sub-text-color;
             }
           }
         }
         span {
           a {
-            font: $standart_font $droid_serif;
-            color: $orange;
-            line-height: $line_height;
+            @include font(
+              $droid_serif,
+              $font_size-sm,
+              $normal,
+              $price_link_color,
+              $line_height-md
+            );
             &:hover {
-              color: #000;
+              color: $black;
             }
           }
         }
         .sign_in {
-          margin-top: $margin-x * 2;
-          padding-bottom: $padding-x * 2;
+          margin-top: $margin-lg * 2;
+          padding-bottom: $padding-lg * 2;
         }
       }
     }
     span {
-      width: 100%;
+      @include full_container;
       @include padding-6-5;
-      font: $standart_font $droid_serif;
-      line-height: $line_height;
-      color: $black;
+      @include font(
+        $droid_serif,
+        $font_size-sm,
+        $normal,
+        $third-text-color,
+        $line_height-md
+      );
     }
   }
 }

@@ -1,6 +1,6 @@
 main {
   .books_container {
-      padding-bottom: 40px;
+    padding-bottom: $padding-elg * 2;
     @media only screen and (min-width: 1200px) {
       width: 72%;
     }
@@ -8,36 +8,38 @@ main {
       @include full_container_margin;
     }
     .books_view {
-      width: 100%;
-      padding-bottom: $padding-x;
-      margin-bottom: $margin-x * 2;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: flex-end;
+      @include full_container;
+      @include flex(flex, row, flex-end, center, nowrap);
+      padding-bottom: $padding-md * 2;
+      margin-bottom: $margin-lg * 2;
+      border-bottom: $border-width-sm solid rgba(0, 0, 0, 0.1);
       .grid_view {
-        border: 1px solid #ccc;
-        line-height: 37px;
-        text-align: center;
-        width: 35px;
-        height: 35px;
-        border-radius: 4px;
-        margin-left: 6px;
-        cursor: pointer;
+        @include pointer;
+        @include text-align(center);
+        @include width-height($bookView, $bookView);
+        border: $border-width-sm solid $view-border-color;
+        line-height: $line_height-elg;
+        border-radius: $border-radius-lg;
+        margin-left: $margin-sm * 2;
         &.chosen {
-          border: 1px solid $orange;
-          color: $orange;
+          border: $border-width-sm solid $main-bg-color;
+          color: $price_link_color;
         }
       }
       .list_view {
         @extend .grid_view;
       }
       .sort_by {
-        margin-left: 6px;
+        margin-left: $margin-sm * 2;
         select {
           background-color: rgba(0, 0, 0, 0.05);
-          border: 1px solid rgba(0, 0, 0, 0.13);
-          border-radius: 4px;
-          padding: 9px 8px 5px;
+          @include border(
+            $border-width-sm,
+            solid,
+            rgba(0, 0, 0, 0.13),
+            $border-radius-lg
+          );
+          padding: $padding-sm * 3 $padding-esm * 4 $padding-md;
           &:focus {
             outline: none;
           }
@@ -45,10 +47,9 @@ main {
       }
     }
     .books_wrapper {
-      margin: 0 -1 * $margin-y !important;
+      margin: 0 -1 * $margin-md * 3 !important;
       min-width: 100%;
-      display: flex;
-      flex-wrap: wrap;
+      @include flex(flex, row, left, "", wrap);
       width: auto;
       .book_post {
         @media only screen and (min-width: 850px) {
@@ -58,69 +59,70 @@ main {
           width: 50%;
         }
         @media only screen and (max-width: 480px) {
-          width: 100%;
+          @include full_container;
         }
-        padding: 0 14px;
-        margin-bottom: $margin-x * 4;
-        box-sizing: border-box;
+        @include border-box;
+        padding: 0 $padding-esm * 7;
+        margin-bottom: $margin-elg * 2;
         .book_cover {
           img {
-            width: 100%;
+            @include full_container;
             height: auto;
           }
         }
         .book_info {
-          margin-top: $margin-x/2;
+          margin-top: $margin-md;
           h1 {
-            font-size: $normal_font + 2px;
-            font-family: $merriweather;
-            font-weight: bold;
-            color: $black;
-            line-height: $line_height + 2px;
+            @include font(
+              $merriweather,
+              $font_size-books,
+              $bold,
+              $third-text-color,
+              $line_height-lg
+            );
           }
           .stars {
-            color: $stars;
-            font-size: $normal_font + 2px;
-            line-height: $line_height;
+            color: $stars-color;
+            font-size: $font_size-books;
+            line-height: $line_height-md;
           }
           p {
-            font-size: $small_font;
-            font-family: $droid_serif;
-            color: $gray;
-            line-height: $line_height;
-            margin-top: $margin-x/2;
+            @include font(
+              $droid_serif,
+              $font_size-esm,
+              $normal,
+              $sub-text-color,
+              $line_height-md
+            );
+            margin-top: $margin-md;
           }
           .book_review {
             @extend .stars;
-            display: flex;
-            align-items: center;
+            @include flex(flex, row, left, center, nowrap);
             i {
-              margin-right: $margin-x/2;
+              margin-right: $margin-md;
             }
             p {
-              line-height: $line_height;
-              color: $footer;
-              font-size: $standart_font;
+              line-height: $line_height-md;
+              color: $secondary-text-color;
+              font-size: $font_size-sm;
               a {
-                color: $orange;
+                color: $price_link_color;
               }
             }
           }
           span {
-            font-size: $bigger_font;
-            font-family: $droid_serif;
-            font-weight: bold;
-            color: $orange;
-            margin: $margin-x 0;
+            @include font($droid_serif, $font_size-section-head, $bold, $price_link_color,"");
             @include padding-6-5;
-            display: block;
+            @include display(block);
+            margin: $margin-md 0;
           }
         }
       }
     }
     .page_buttons {
-      padding: 15px 0;
-      text-align: center;
+      padding: $padding-md * 3 0;
+      @include text-align(center);
     }
   }
   aside {
@@ -131,60 +133,47 @@ main {
       @include full_container_margin;
     }
     .newsletter_box {
-      margin-bottom: 40px;
+      margin-bottom: $margin-elg * 2;
       .newsletter_head {
-        font: 22px $merriweather;
-        font-weight: bold;
+        @include font($merriweather, $font_size-section-head, $bold, "", "");
       }
       .newsletter_info {
-        padding-top: $padding-x;
-        font: $small_font $droid_serif;
-        line-height: $line_height;
+        padding-top: $padding-md * 2;
+        @include font($droid_serif, $font_size-esm, $normal, $third-text-color, $line_height-md);
         font-style: italic;
-        color: $black;
       }
       .newsletter_subscribe {
-        display: flex;
-        padding: 15px 35px 0 0;
+        @include display(flex);
+        padding: $padding-md * 3 $padding-lg * 3.5 0 0;
       }
     }
     .news_small {
-      padding-bottom: 40px;
+      padding-bottom: $padding-elg * 2;
       .news_head {
-        color: $footer;
-        font-family: $merriweather;
-        font-size: 22px;
-        margin-bottom: 8px;
-        font-weight: bold;
-        line-height: 30px;
+        @include font($merriweather, $font_size-lg, $bold, $secondary-text-color, $line_height-lg);
+        margin-bottom: $margin-esm * 4;
       }
       ul {
-        width: 100%;
+        @include full_container;
         li {
-          padding: 15px 0;
-          display: flex;
+          padding: $padding-md * 3 0;
+          @include display(flex);
           .news_img {
             max-width: 30%;
             img {
-              width: 100%;
+              @include full_container;
               height: auto;
             }
           }
           .news_content {
-            font-family: $droid_serif;
-            padding-left: 15px;
+            padding-left: $padding-md * 3;
             p {
-              color: $gray;
-              font-size: $small_font;
-              line-height: 140%;
+              @include font($droid_serif, $font_size-esm, $normal, $sub-text-color, $line_height-news);
             }
             a {
-              color: $footer;
-              font-size: 15px;
-              font-weight: bold;
-              line-height: 140%;
+              @include font($droid_serif, $font_size-sm, $bold, $secondary-text-color, $line_height-news);
               &:hover {
-                color: $orange;
+                color: $price_link_color;
               }
             }
           }

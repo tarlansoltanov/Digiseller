@@ -1,8 +1,38 @@
+//=================================//
+//-----------Typography-----------//
+//=================================//
+
+//--------------Fonts--------------//
 $merriweather: "Merriweather",serif;
 $droid_serif: "Droid Serif",serif;
-$small_font: 14px;
-$standart_font: 16px;
-$normal_font: 18px;
-$bigger_font: 25px;
-$biggest_font: 35px;
-$line_height: 28px;
+
+//-----------Fonts-Sizes----------//
+
+$font_size-esm: 14px;
+$font_size-sm: 16px;
+$font_size-md: 18px;
+$font_size-lg: 22px;
+$font_size-elg: 35px;
+
+$font_size-books: 20px;
+$font_size-section-head: 25px;
+$font_size-big: 60px;
+
+//----------Line-Heights----------//
+$line_height-esm: 20px;
+$line_height-sm: 26px;
+$line_height-md: 28px;
+$line_height-lg: 30px;
+$line_height-elg: 36px;
+$line_height-nm: normal;
+$line_height-intro: 50px;
+$line_height-news: 140%;
+
+//-------------Weight-------------//
+$lighter: 100;
+$light: 200;
+$medium: 300;
+$normal: 400;
+$l_bold: 500;
+$bold: 600;
+$bolder: 700;

@@ -1,28 +1,27 @@
 .banner_container {
-  margin-top: 106.6px;
   @include full_container;
-  background-color: $orange;
   @include center;
-  padding-top: 70px;
+  background-color: $main-bg-color;
+  padding-top: $padding-elg * 5;
+  margin-bottom: $margin-elg*5;
   .banner_wrapper {
-    text-align: center;
+    @include text-align(center);
     @include res_container;
-    margin-bottom: -60px;
     @include center;
     flex-direction: column;
     .intro {
-      color: $white;
+      color: $main-text-color;
       max-width: 80%;
-      margin-bottom: 20px;
+      margin-bottom: $margin-lg * 2;
       h1 {
-        font: $biggest_font $merriweather;
-        font-weight: bold;
-        line-height: 50px;
-        margin-bottom: 6px;
+        font: $font_size-elg $merriweather;
+        font-weight: $bold;
+        line-height: $line_height-intro;
+        margin-bottom: $margin-sm * 2;
       }
       p {
-        font: $standart_font $droid_serif;
-        line-height: $line_height;
+        font: $font_size-sm $droid_serif;
+        line-height: $line_height-md;
         @include padding-6-5;
       }
     }

@@ -1,100 +1,91 @@
 header {
-  z-index: 5;
   @include full_container;
-  background-color: $orange;
-  box-shadow: $shadow;
-  position: fixed;
-  top: 0;
+  @include b-t-color($main-bg-color, $main-text-color);
+  @include position(fixed, 0, 0, 0, "");
+  z-index: 5;
+  box-shadow: $menu-box-shadow;
   .header_container {
-    position: relative;
-    @include res_container;
-    height: 105.6px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    @include flex(flex, row, space-between, center, nowrap);
+    @include position(relative, "", "", "", "");
+    @include res_container_margin;
     .logo_box {
-      @media only screen and (max-width: 600px) {
-        width: 170px;
-        height: 55px;
-        margin-left: $margin-x;
+      @media only screen and (max-width: $main_bp/2) {
+        max-height: $logoHeight - 10px;
+        margin-left: $margin-md * 2;
       }
-      @media only screen and (max-width: 600px) {
-        width: 200px;
-        height: 65px;
+      @media only screen and (max-width: $main_bp/2) {
+        max-height: $logoHeight;
       }
-      padding: $padding-x*2 0;
+      padding: $padding-lg * 2 0;
     }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: $main_bp) {
       .mobile_button,
       .mobile_menu {
-        display: none;
+        @include display(none);
       }
       navbar {
-        padding: $line_height 0;
+        padding: $padding-lg * 3 0;
         ul {
-          display: flex;
-          align-items: center;
+          @include flex(flex, row, center, center, nowrap);
           li {
             a {
-              font: $normal_font $merriweather;
-              font-weight: 500;
-              padding: $padding-x+2px $padding-x*2;
-              color: $white;
-              margin: 0 $margin-x/2;
-              text-decoration: none;
-              border-radius: 3px;
+              @include font(
+                $merriweather,
+                $font_size-md,
+                $l_bold,
+                $main-text-color,
+                ""
+              );
+              padding: $padding-esm * 6 $padding-lg * 2;
+              margin: 0 $margin-md;
+              border-radius: $border-radius-md;
               &:hover {
-                background-color: $footer;
+                background-color: $secondary-bg-color;
               }
-            }
-            a.chosen {
-              background-color: $footer;
+              &.chosen {
+                background-color: $secondary-bg-color;
+              }
             }
           }
         }
       }
     }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: $main_bp) {
       .mobile_button {
         @include center;
-        color: $white;
-        font-size: $bigger_font;
-        width: 80px;
-        height: 80px;
-        background-color: rgba(0, 0, 0, 0.9);
-        border-radius: 50% 0px 0px 50%;
-        position: fixed;
-        right: 0;
+        @include font(
+          $merriweather,
+          $font_size-lg,
+          $normal,
+          $main-text-color,
+          ""
+        );
+        @include position(fixed, "", 0, "", "");
+        width: $mobileMenuBtn;
+        height: $mobileMenuBtn;
+        background-color: $menu-hover-bg-color;
+        border-radius: $border-radius-half 0px 0px $border-radius-half;
         z-index: 3;
-        cursor: pointer;
       }
       .hide {
-        display: none;
+        @include display(none);
       }
       navbar {
-        width: 299px;
-        height: 3537px;
-        position: fixed;
+        @include position(fixed, 0, 0, "", "");
+        @include full_box;
+        width: $navbarWidth;
+        background-color: $menu-hover-bg-color;
         z-index: 5;
-        right: 0;
-        top: 0;
-        background-color: rgba(0, 0, 0, 0.9);
         ul {
-          position: fixed;
-          padding-left: $padding-y;
-          width: 284px;
-          display: flex;
-          flex-direction: column;
-          padding-top: 25px;
+          @include position(fixed, "", "", "", "");
+          @include flex(flex, column, flex-start, flex-start, nowrap);
+          padding-left: $padding-md * 3;
+          padding-top: $padding-md * 5;
           li {
             a {
-              display: block;
-              font: $bigger_font $merriweather;
-              font-weight: 500;
-              padding: $padding-y $padding-x*2;
-              color: $white;
-              text-decoration: none;
+              @include display(block);
+              @include font($merriweather, $font_size-lg,$l_bold,$main-text-color,"");
+              padding: $padding-md * 3 $padding-lg * 2;
             }
           }
         }

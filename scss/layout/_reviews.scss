@@ -1,50 +1,42 @@
 .reviews_container {
   @include full_container_margin;
+  @include relative;
+  padding-top: $padding-elg * 4.5;
+  margin-bottom: $margin-elg * 3.5;
   .reviews_wrapper {
     @include res_container;
     .reviews_head {
-      margin-top: 190px;
-      display: block;
-      text-align: center;
-      padding-bottom: 40px;
+      @include display(block);
+      @include text-align(center);
+      padding-bottom: $padding-elg * 2;
       span {
-        font: $biggest_font $merriweather;
-        font-weight: bold;
+        @include font($merriweather, $font_size-elg, $bold,"","");
       }
     }
     .reviews {
-      line-height: $line_height;
-      width: 100%;
-      @media only screen and (min-width: 480px) {
-        display: flex;
-      }
-      @media only screen and (max-width: 480px) {
-        display: block;
-      }
+      line-height: $line_height-md;
+      @include full_container;
+      @include res_display(480px);
       .review_item {
         @media only screen and (min-width: 480px) {
           width: 45%;
         }
         @media only screen and (max-width: 480px) {
-          width: 95%;
+          width: 85%;
         }
-        color: $black;
-        display: block;
-        text-align: center;
+        @include display (block);
+        color: $third-text-color;
         background: url(../images/quotes.png) no-repeat 0px 0px;
-        margin-bottom: 20px;
+        margin-bottom: $margin-lg * 2;
         margin-left: 2%;
         padding-left: 3%;
         span {
-          text-align: center;
-          font: $normal_font $droid_serif;
+          font: $font_size-md $droid_serif;
           font-style: italic;
           cite {
-            display: block;
-            margin-top: 15px;
-            font: $small_font $droid_serif;
-            font-style: normal;
-            font-weight: bold;
+            @include display(block);
+            @include font($droid_serif, $font_size-esm, $bold, "", "");
+            margin-top: $margin-md * 3;
           }
         }
       }

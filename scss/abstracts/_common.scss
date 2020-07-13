@@ -1,21 +1,21 @@
 .heading_container {
   @include full_container;
-  margin-top: 136.6px;
-  margin-bottom: $margin-x*5;
+  margin-top: $margin-lg * 3;
+  margin-bottom: $margin-lg * 5;
   .heading {
     @include res_container_margin;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     h1 {
-      color: $black;
-      font: $biggest_font $merriweather;
-      font-weight: bold;
-      line-height: normal;
+      color: $third-text-color;
+      font: $font_size-elg $merriweather;
+      font-weight: $bold;
+      line-height: $line_height-nm;
     }
     p {
-      color: $gray;
-      font: $standart_font $droid_serif;
-      margin-bottom: 20px;
-      line-height: $line_height;
+      color: $sub-text-color;
+      font: $font_size-sm $droid_serif;
+      margin-bottom: $margin-lg * 2;
+      line-height: $line_height-md;
     }
   }
 }
@@ -26,9 +26,8 @@
   @media only screen and (max-width: 1200px) {
     @include full_container_margin;
   }
-  padding-bottom: 60px;
+  padding-bottom: $padding-elg * 3;
   .ad {
-    line-height: 140%;
     img {
       width: 300px;
       height: 300px;

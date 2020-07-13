@@ -1,15 +1,83 @@
-// Colors
-$black: #444444;
-$gray: #888888;
-$orange: #d86843;
+//======================//
+//--------Colors--------//
+//======================//
+$main-theme-color: #d86843;
 $white: #fff;
-$footer: #333;
-$yellow: #ffce69;
-$stars:#F0B74A;
-$shadow:0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+$black: #000;
+$transparent: transparent;
 
-// Spacing 
-$margin-x: 10px;
-$padding-x: 10px;
-$margin-y: 15px;
-$padding-y: 15px;
+//------Background------//
+$main-bg-color: $main-theme-color;
+$secondary-bg-color: #333;
+$secondary_btn_color: #ffce69;
+$menu-hover-bg-color: rgba(0, 0, 0, 0.9);
+
+//---------Text---------//
+$main-text-color: $white;
+$secondary-text-color: #333;
+$third-text-color: #444;
+$sub-text-color: #888;
+$price_link_color: $main-theme-color;
+$input-text-color: #666;
+$stars-color: #f0b74a;
+
+//======================//
+//--------Border--------//
+//======================//
+
+//---------Width--------//
+$border-width-sm: 1px;
+$border-width-md: 2px;
+$border-width-lg: 3px;
+
+//---------Color--------//
+$main-border-color: $main-theme-color;
+$sm_link-border-color: #979797;
+$view-border-color: #ccc;
+$menu-border-color: rgba(255, 255, 255, 0.4);
+
+//--------Radius--------//
+$border-radius-sm: 2px;
+$border-radius-md: 3px;
+$border-radius-lg: 4px;
+$border-radius-half: 50%;
+
+//------Box Shadows------//
+$menu-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+//======================//
+//--------Spacing--------//
+//======================//
+
+//--------Margin--------//
+$margin-esm: 2px;
+$margin-sm: 3px;
+$margin-md: 5px;
+$margin-lg: 10px;
+$margin-elg: 20px;
+
+//-------Padding--------//
+$padding-esm: 2px;
+$padding-sm: 3px;
+$padding-md: 5px;
+$padding-lg: 10px;
+$padding-elg: 20px;
+
+//======================//
+//-----Object sizes-----//
+//======================//
+
+$mobileMenuBtn: 80px;
+$profilImg: 150px;
+$bookView: 35px;
+
+//---------Width--------//
+$navbarWidth: 300px;
+$social-box: 45px;
+
+
+//---------Height-------//
+$logoHeight: 65px;
+$videoReviewHeight: 340px;
+
+//-----Break Points-----//
+$main_bp: 1200px;

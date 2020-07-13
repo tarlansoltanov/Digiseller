@@ -1,11 +1,12 @@
 .video_review_container {
   @include full_container_margin;
-  margin-top: 140px;
+  padding-top: $padding-elg * 3.5;
+  margin-bottom: $margin-elg * 3.5;
   .video_review_wrapper {
     @include res_container;
-    @include res_display;
+    @include res_display(990px);
     .video_review {
-        height: 338px;
+      height: $videoReviewHeight;
       @media only screen and (min-width: 990px) {
         width: 50%;
       }
@@ -14,11 +15,10 @@
       }
     }
     .review_box {
-      box-sizing: border-box;
-      min-width: 338px;
-      background-color: $orange;
-      color: $white;
-      padding: 45px;
+      @include border-box;
+      @include b-t-color($main-bg-color, $main-text-color);
+      min-width: $videoReviewHeight - 10px;
+      padding: $padding-lg * 4.5;
       @media only screen and (min-width: 990px) {
         width: 50%;
       }
@@ -26,20 +26,16 @@
         @include full_container;
       }
       h1 {
-        font: $bigger_font $merriweather;
-        padding-bottom: 6px;
-        font-weight: bold;
-        line-height: 36px;
+        @include font($merriweather, $font_size-lg, $bold, "", $line_height-elg);
+        padding-bottom: $padding-sm * 2;
       }
       p {
-        font: $standart_font $droid_serif;
-        padding-top: 6px;
-        padding-bottom: 5px;
-        line-height: 24px;
+        @include padding-6-5;
+        @include font($droid_serif, $font_size-sm, $normal, "",$line_height-esm);
       }
       .read_more {
-        width: 100%;
-        display: flex;
+        @include full_container;
+        @include display(flex);
       }
     }
   }
